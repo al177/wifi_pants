@@ -1,0 +1,693 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:wifi_pants-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "ESP8266 WiFi Module for Raspberry Pi"
+Date "2016-01-11"
+Rev "v0.1"
+Comp "Andrew Litt"
+Comment1 "https://github.com/al177/wifi_pants"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X20 P1
+U 1 1 5665E56D
+P 8950 3300
+F 0 "P1" H 8950 4350 50  0000 C CNN
+F 1 "CONN_02X20" V 8950 3300 50  0000 C CNN
+F 2 "wifi_pants:Socket_Strip_Straight_2x20_pi" H 8950 2350 50  0001 C CNN
+F 3 "" H 8950 2350 50  0000 C CNN
+F 4 "Adafruit Industries" H 8950 3300 60  0001 C CNN "MFG Name"
+F 5 "2223" H 8950 3300 60  0001 C CNN "MFG Part Num"
+F 6 "1528-1385-ND" H 8950 3300 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-search/en?pv88=23&FV=fff40016%2Cfff802f4&mnonly=0&newproducts=1&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25" H 8950 3300 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 8950 3300 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 8950 3300 60  0001 C CNN "2nd Distrib Link"
+	1    8950 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 3050 0    39   BiDi ~ 0
+SD_CLK
+Text GLabel 9300 3050 2    39   BiDi ~ 0
+SD_CMD
+Text GLabel 9300 3150 2    39   BiDi ~ 0
+SD_D0
+Text GLabel 9300 3350 2    39   BiDi ~ 0
+SD_D1
+$Comp
+L GND #PWR01
+U 1 1 5665E6B7
+P 9750 3300
+F 0 "#PWR01" H 9750 3050 50  0001 C CNN
+F 1 "GND" H 9750 3150 50  0000 C CNN
+F 2 "" H 9750 3300 50  0000 C CNN
+F 3 "" H 9750 3300 50  0000 C CNN
+	1    9750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5665E7BC
+P 9750 4300
+F 0 "#PWR02" H 9750 4050 50  0001 C CNN
+F 1 "GND" H 9750 4150 50  0000 C CNN
+F 2 "" H 9750 4300 50  0000 C CNN
+F 3 "" H 9750 4300 50  0000 C CNN
+	1    9750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5665E846
+P 8050 4300
+F 0 "#PWR03" H 8050 4050 50  0001 C CNN
+F 1 "GND" H 8050 4150 50  0000 C CNN
+F 2 "" H 8050 4300 50  0000 C CNN
+F 3 "" H 8050 4300 50  0000 C CNN
+	1    8050 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 7050 3    39   BiDi ~ 0
+SD_CLK
+Text GLabel 3650 7050 3    39   BiDi ~ 0
+SD_CMD
+Text GLabel 3750 7050 3    39   BiDi ~ 0
+SD_D0
+Text GLabel 4050 7050 3    39   BiDi ~ 0
+SD_D1
+Text GLabel 8550 3750 0    39   BiDi ~ 0
+GPIO5
+Text GLabel 1550 5950 0    39   Input ~ 0
+GPIO5
+$Comp
+L GND #PWR04
+U 1 1 56676CA4
+P 5700 6850
+F 0 "#PWR04" H 5700 6600 50  0001 C CNN
+F 1 "GND" H 5700 6700 50  0000 C CNN
+F 2 "" H 5700 6850 50  0000 C CNN
+F 3 "" H 5700 6850 50  0000 C CNN
+	1    5700 6850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 2450
+NoConn ~ 8700 2550
+NoConn ~ 8700 2650
+NoConn ~ 8700 2750
+NoConn ~ 8700 2850
+NoConn ~ 9200 2850
+NoConn ~ 8700 3250
+NoConn ~ 8700 3350
+NoConn ~ 8700 3450
+NoConn ~ 9200 3450
+NoConn ~ 9200 3550
+NoConn ~ 8700 3950
+NoConn ~ 8700 4050
+NoConn ~ 9200 4250
+NoConn ~ 9200 4150
+NoConn ~ 9200 4050
+NoConn ~ 9200 3850
+$Comp
+L +3.3V #PWR05
+U 1 1 5667E37B
+P 8050 3100
+F 0 "#PWR05" H 8050 2950 50  0001 C CNN
+F 1 "+3.3V" H 8050 3240 50  0000 C CNN
+F 2 "" H 8050 3100 50  0000 C CNN
+F 3 "" H 8050 3100 50  0000 C CNN
+	1    8050 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 2350
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 566B25ED
+P 7750 3150
+F 0 "#FLG06" H 7750 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 7750 3330 50  0000 C CNN
+F 2 "" H 7750 3150 50  0000 C CNN
+F 3 "" H 7750 3150 50  0000 C CNN
+	1    7750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 566B36B3
+P 9950 4200
+F 0 "#FLG07" H 9950 4295 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 4380 50  0000 C CNN
+F 2 "" H 9950 4200 50  0000 C CNN
+F 3 "" H 9950 4200 50  0000 C CNN
+	1    9950 4200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9200 2650
+NoConn ~ 9200 2750
+$Comp
+L TEST_1P W5
+U 1 1 5680DA2B
+P 5650 5050
+F 0 "W5" H 5650 5320 50  0000 C CNN
+F 1 "TXD" H 5650 5250 50  0000 C CNN
+F 2 "wifi_pants:Measurement_Point_Round-SMD-Pad_Small" H 5850 5050 50  0001 C CNN
+F 3 "" H 5850 5050 50  0000 C CNN
+F 4 "NA" H 5650 5050 60  0001 C CNN "MFG Name"
+F 5 "NA" H 5650 5050 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 5650 5050 60  0001 C CNN "Digikey PN"
+F 7 "NA" H 5650 5050 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 5650 5050 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5650 5050 60  0001 C CNN "2nd Distrib Link"
+	1    5650 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W6
+U 1 1 5680DAEE
+P 5650 5250
+F 0 "W6" H 5650 5520 50  0000 C CNN
+F 1 "RXD" H 5650 5450 50  0000 C CNN
+F 2 "wifi_pants:Measurement_Point_Round-SMD-Pad_Small" H 5850 5250 50  0001 C CNN
+F 3 "" H 5850 5250 50  0000 C CNN
+F 4 "NA" H 5650 5250 60  0001 C CNN "MFG Name"
+F 5 "NA" H 5650 5250 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 5650 5250 60  0001 C CNN "Digikey PN"
+F 7 "NA" H 5650 5250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 5650 5250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5650 5250 60  0001 C CNN "2nd Distrib Link"
+	1    5650 5250
+	0    1    1    0   
+$EndComp
+NoConn ~ 8700 3650
+NoConn ~ 9200 3650
+Wire Wire Line
+	9750 3250 9200 3250
+Wire Wire Line
+	9750 2550 9750 3300
+Wire Wire Line
+	9750 2550 9200 2550
+Connection ~ 9750 3250
+Wire Wire Line
+	9200 2950 9750 2950
+Connection ~ 9750 2950
+Wire Wire Line
+	9200 3050 9300 3050
+Wire Wire Line
+	8550 3050 8700 3050
+Wire Wire Line
+	9200 3150 9300 3150
+Wire Wire Line
+	9300 3350 9200 3350
+Wire Wire Line
+	9750 3750 9750 4300
+Wire Wire Line
+	9750 3950 9200 3950
+Wire Wire Line
+	9750 3750 9200 3750
+Connection ~ 9750 3950
+Wire Wire Line
+	8050 3550 8050 4300
+Wire Wire Line
+	8050 4250 8700 4250
+Wire Wire Line
+	8050 3550 8700 3550
+Connection ~ 8050 4250
+Wire Wire Line
+	4150 6350 4150 6550
+Wire Wire Line
+	3650 6350 3650 6550
+Wire Wire Line
+	3750 6350 3750 6550
+Wire Wire Line
+	4050 6350 4050 6550
+Wire Wire Line
+	4150 6850 4150 7050
+Wire Wire Line
+	3650 6850 3650 7050
+Wire Wire Line
+	3750 6850 3750 7050
+Wire Wire Line
+	4050 6850 4050 7050
+Wire Wire Line
+	8700 3750 8550 3750
+Wire Wire Line
+	3000 5350 2600 5350
+Wire Wire Line
+	5500 6500 5500 6750
+Wire Wire Line
+	5500 6750 5900 6750
+Wire Wire Line
+	5900 6750 5900 6500
+Wire Wire Line
+	5700 6500 5700 6850
+Connection ~ 5700 6750
+Wire Wire Line
+	5500 5750 5500 6300
+Wire Wire Line
+	5700 5650 5700 6300
+Wire Wire Line
+	5900 5550 5900 6300
+Wire Wire Line
+	9950 4200 9750 4200
+Connection ~ 9750 4200
+$Comp
+L TEST_1P W1
+U 1 1 5684B584
+P 3350 4250
+F 0 "W1" H 3350 4520 50  0000 C CNN
+F 1 "MOUNT" H 3350 4450 50  0000 C CNN
+F 2 "wifi_pants:NPTH_Hole_2_75mm" H 3550 4250 50  0001 C CNN
+F 3 "" H 3550 4250 50  0000 C CNN
+	1    3350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W2
+U 1 1 5684B5F3
+P 3650 4250
+F 0 "W2" H 3650 4520 50  0000 C CNN
+F 1 "MOUNT" H 3650 4450 50  0000 C CNN
+F 2 "wifi_pants:NPTH_Hole_2_75mm" H 3850 4250 50  0001 C CNN
+F 3 "" H 3850 4250 50  0000 C CNN
+	1    3650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W3
+U 1 1 5684B660
+P 3950 4250
+F 0 "W3" H 3950 4520 50  0000 C CNN
+F 1 "MOUNT" H 3950 4450 50  0000 C CNN
+F 2 "wifi_pants:NPTH_Hole_2_75mm" H 4150 4250 50  0001 C CNN
+F 3 "" H 4150 4250 50  0000 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W4
+U 1 1 5684B6D9
+P 4250 4250
+F 0 "W4" H 4250 4520 50  0000 C CNN
+F 1 "MOUNT" H 4250 4450 50  0000 C CNN
+F 2 "wifi_pants:NPTH_Hole_2_75mm" H 4450 4250 50  0001 C CNN
+F 3 "" H 4450 4250 50  0000 C CNN
+	1    4250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5684BB74
+P 3800 4400
+F 0 "#PWR08" H 3800 4150 50  0001 C CNN
+F 1 "GND" H 3800 4250 50  0000 C CNN
+F 2 "" H 3800 4400 50  0000 C CNN
+F 3 "" H 3800 4400 50  0000 C CNN
+	1    3800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4250 4250 4250
+Connection ~ 3650 4250
+Connection ~ 3950 4250
+Wire Wire Line
+	3800 4250 3800 4400
+Connection ~ 3800 4250
+Text GLabel 8550 4150 0    39   BiDi ~ 0
+GPIO26
+Text GLabel 1550 5200 0    39   Input ~ 0
+GPIO26
+Wire Wire Line
+	2600 5600 2600 5350
+$Comp
+L Jumper_NO_Small JP4
+U 1 1 5689F2D7
+P 5500 6400
+F 0 "JP4" H 5500 6350 50  0000 C CNN
+F 1 "MTDO" H 5200 6300 50  0000 C CNN
+F 2 "wifi_pants:GS2" H 5500 6400 50  0001 C CNN
+F 3 "" H 5500 6400 50  0000 C CNN
+F 4 "NA" H 5500 6400 60  0001 C CNN "MFG Name"
+F 5 "NA" H 5500 6400 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 5500 6400 60  0001 C CNN "1st Distrib PN"
+F 7 "NA" H 5500 6400 60  0001 C CNN "1st Distrib Link"
+F 8 "NA" H 5500 6400 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5500 6400 60  0001 C CNN "2nd Distrib Link"
+	1    5500 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper_NO_Small JP5
+U 1 1 5689F39E
+P 5700 6400
+F 0 "JP5" H 5700 6350 50  0000 C CNN
+F 1 "GPIO2" H 5400 6300 50  0000 C CNN
+F 2 "wifi_pants:GS2" H 5700 6400 50  0001 C CNN
+F 3 "" H 5700 6400 50  0000 C CNN
+F 4 "NA" H 5700 6400 60  0001 C CNN "MFG Name"
+F 5 "NA" H 5700 6400 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 5700 6400 60  0001 C CNN "1st Distrib PN"
+F 7 "NA" H 5700 6400 60  0001 C CNN "1st Distrib Link"
+F 8 "NA" H 5700 6400 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5700 6400 60  0001 C CNN "2nd Distrib Link"
+	1    5700 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper_NO_Small JP6
+U 1 1 5689F45A
+P 5900 6400
+F 0 "JP6" H 5900 6350 50  0000 C CNN
+F 1 "GPIO0" H 5600 6300 50  0000 C CNN
+F 2 "wifi_pants:GS2" H 5900 6400 50  0001 C CNN
+F 3 "" H 5900 6400 50  0000 C CNN
+F 4 "NA" H 5900 6400 60  0001 C CNN "MFG Name"
+F 5 "NA" H 5900 6400 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 5900 6400 60  0001 C CNN "1st Distrib PN"
+F 7 "NA" H 5900 6400 60  0001 C CNN "1st Distrib Link"
+F 8 "NA" H 5900 6400 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5900 6400 60  0001 C CNN "2nd Distrib Link"
+	1    5900 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 568A100D
+P 3650 6700
+F 0 "R1" V 3700 6900 50  0000 C CNN
+F 1 "100" V 3650 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3580 6700 50  0001 C CNN
+F 3 "" H 3650 6700 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 3650 6700 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1000V" H 3650 6700 60  0001 C CNN "MFG Part Num"
+F 6 "P100HCT-ND" H 3650 6700 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 3650 6700 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 3650 6700 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3650 6700 60  0001 C CNN "2nd Distrib Link"
+	1    3650 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 5600 2600 5600
+$Comp
+L ESP-12E U1
+U 1 1 56940F4A
+P 3900 5450
+F 0 "U1" H 3900 5350 50  0000 C CNN
+F 1 "ESP-12E" H 3900 5550 50  0000 C CNN
+F 2 "wifi_pants:ESP-12E-narrow" H 3900 5450 50  0001 C CNN
+F 3 "" H 3900 5450 50  0001 C CNN
+	1    3900 5450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 5150
+NoConn ~ 3000 5250
+NoConn ~ 4800 5350
+NoConn ~ 4800 5450
+NoConn ~ 3000 5750
+NoConn ~ 3000 5650
+NoConn ~ 3000 5550
+NoConn ~ 3000 5450
+$Comp
+L Jumper_NC_Small JP3
+U 1 1 56942992
+P 3550 7600
+F 0 "JP3" H 3550 7700 50  0000 C CNN
+F 1 "FORCE_HOLD" H 3550 7500 50  0000 C CNN
+F 2 "wifi_pants:GS2" H 3550 7600 50  0001 C CNN
+F 3 "" H 3550 7600 50  0000 C CNN
+F 4 "NA" H 3550 7600 60  0001 C CNN "MFG Name"
+F 5 "NA" H 3550 7600 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 3550 7600 60  0001 C CNN "1st Distrib PN"
+F 7 "NA" H 3550 7600 60  0001 C CNN "1st Distrib Link"
+F 8 "NA" H 3550 7600 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3550 7600 60  0001 C CNN "2nd Distrib Link"
+	1    3550 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 56942A8D
+P 4250 7600
+F 0 "R5" V 4330 7600 50  0000 C CNN
+F 1 "1K" V 4250 7600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 7600 50  0001 C CNN
+F 3 "" H 4250 7600 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 4250 7600 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1001V" H 4250 7600 60  0001 C CNN "MFG Part Num"
+F 6 "P1.00KHCT-ND" H 4250 7600 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1001V/P1.00KHCT-ND/198071" H 4250 7600 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 4250 7600 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 4250 7600 60  0001 C CNN "2nd Distrib Link"
+	1    4250 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR09
+U 1 1 56942D2D
+P 4400 7300
+F 0 "#PWR09" H 4400 7150 50  0001 C CNN
+F 1 "+3.3V" H 4400 7440 50  0000 C CNN
+F 2 "" H 4400 7300 50  0000 C CNN
+F 3 "" H 4400 7300 50  0000 C CNN
+	1    4400 7300
+	1    0    0    -1  
+$EndComp
+Text Label 3950 6450 1    39   ~ 0
+/WP
+Wire Wire Line
+	3850 6350 3850 7600
+Text Label 3850 6450 1    39   ~ 0
+/HOLD
+Text Label 3650 6450 1    39   ~ 0
+/CS
+Wire Wire Line
+	3250 7600 3250 6500
+Wire Wire Line
+	3250 6500 3650 6500
+Connection ~ 3650 6500
+Text Label 3750 6400 1    39   ~ 0
+SO
+Text Label 4050 6400 1    39   ~ 0
+SI
+Text Label 4150 6400 1    39   ~ 0
+CLK
+Wire Wire Line
+	3950 6350 3950 7600
+Wire Wire Line
+	3950 7600 4100 7600
+Wire Wire Line
+	4400 7600 4400 7300
+Wire Wire Line
+	4800 5150 4950 5150
+Wire Wire Line
+	4950 5150 4950 5050
+Wire Wire Line
+	4800 5750 5500 5750
+Wire Wire Line
+	4800 5650 5700 5650
+Wire Wire Line
+	4800 5550 5900 5550
+$Comp
+L GND #PWR010
+U 1 1 56943E14
+P 4900 5900
+F 0 "#PWR010" H 4900 5650 50  0001 C CNN
+F 1 "GND" H 4900 5750 50  0000 C CNN
+F 2 "" H 4900 5900 50  0000 C CNN
+F 3 "" H 4900 5900 50  0000 C CNN
+	1    4900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5850 4900 5850
+Wire Wire Line
+	4900 5850 4900 5900
+$Comp
+L +3.3V #PWR011
+U 1 1 56944611
+P 2750 5800
+F 0 "#PWR011" H 2750 5650 50  0001 C CNN
+F 1 "+3.3V" H 2750 5940 50  0000 C CNN
+F 2 "" H 2750 5800 50  0000 C CNN
+F 3 "" H 2750 5800 50  0000 C CNN
+	1    2750 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5850 2750 5850
+Wire Wire Line
+	2750 5800 2750 5950
+NoConn ~ 8700 2950
+$Comp
+L C C1
+U 1 1 56945510
+P 2750 6100
+F 0 "C1" H 2775 6200 50  0000 L CNN
+F 1 "10uF" H 2775 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2788 5950 50  0001 C CNN
+F 3 "" H 2750 6100 50  0000 C CNN
+F 4 "Murata Electronics North America" H 2750 6100 60  0001 C CNN "MFG Name"
+F 5 "GRM219R60J106KE19D" H 2750 6100 60  0001 C CNN "MFG Part Num"
+F 6 "490-3340-1-ND" H 2750 6100 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/GRM219R60J106KE19D/490-3340-1-ND/702881" H 2750 6100 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 2750 6100 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 2750 6100 60  0001 C CNN "2nd Distrib Link"
+	1    2750 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3150 8700 3150
+Wire Wire Line
+	8050 3150 8050 3100
+Connection ~ 8050 3150
+Wire Wire Line
+	8550 4150 8700 4150
+NoConn ~ 8700 3850
+NoConn ~ 9200 2350
+NoConn ~ 9200 2450
+Connection ~ 2750 5850
+$Comp
+L GND #PWR012
+U 1 1 569477AF
+P 2750 6350
+F 0 "#PWR012" H 2750 6100 50  0001 C CNN
+F 1 "GND" H 2750 6200 50  0000 C CNN
+F 2 "" H 2750 6350 50  0000 C CNN
+F 3 "" H 2750 6350 50  0000 C CNN
+	1    2750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6250 2750 6350
+Wire Wire Line
+	3450 7600 3250 7600
+Wire Wire Line
+	3850 7600 3650 7600
+$Comp
+L Jumper_NC_Small JP2
+U 1 1 56948F93
+P 1750 5750
+F 0 "JP2" H 1750 5830 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1760 5690 50  0001 C CNN
+F 2 "wifi_pants:GS2" H 1750 5750 50  0001 C CNN
+F 3 "" H 1750 5750 50  0000 C CNN
+	1    1750 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 56948FFC
+P 1750 5400
+F 0 "JP1" H 1750 5480 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1760 5340 50  0001 C CNN
+F 2 "wifi_pants:GS2" H 1750 5400 50  0001 C CNN
+F 3 "" H 1750 5400 50  0000 C CNN
+	1    1750 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 5500 1750 5650
+Connection ~ 1750 5600
+Wire Wire Line
+	1550 5200 1750 5200
+Wire Wire Line
+	1750 5200 1750 5300
+Wire Wire Line
+	1750 5850 1750 5950
+Wire Wire Line
+	1750 5950 1550 5950
+$Comp
+L R R2
+U 1 1 5694A8A2
+P 3750 6700
+F 0 "R2" V 3800 6900 50  0000 C CNN
+F 1 "100" V 3750 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3680 6700 50  0001 C CNN
+F 3 "" H 3750 6700 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 3750 6700 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1000V" H 3750 6700 60  0001 C CNN "MFG Part Num"
+F 6 "P100HCT-ND" H 3750 6700 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 3750 6700 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 3750 6700 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3750 6700 60  0001 C CNN "2nd Distrib Link"
+	1    3750 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5694A8F6
+P 4050 6700
+F 0 "R3" V 4100 6900 50  0000 C CNN
+F 1 "100" V 4050 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 6700 50  0001 C CNN
+F 3 "" H 4050 6700 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 4050 6700 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1000V" H 4050 6700 60  0001 C CNN "MFG Part Num"
+F 6 "P100HCT-ND" H 4050 6700 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 4050 6700 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 4050 6700 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 4050 6700 60  0001 C CNN "2nd Distrib Link"
+	1    4050 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5694A957
+P 4150 6700
+F 0 "R4" V 4200 6900 50  0000 C CNN
+F 1 "100" V 4150 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 6700 50  0001 C CNN
+F 3 "" H 4150 6700 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 4150 6700 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1000V" H 4150 6700 60  0001 C CNN "MFG Part Num"
+F 6 "P100HCT-ND" H 4150 6700 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 4150 6700 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 4150 6700 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 4150 6700 60  0001 C CNN "2nd Distrib Link"
+	1    4150 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 5050 5650 5050
+Wire Wire Line
+	4800 5250 5650 5250
+Wire Wire Line
+	1550 5600 1550 5900
+Wire Wire Line
+	1550 5900 1750 5900
+Connection ~ 1750 5900
+$EndSCHEMATC
