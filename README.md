@@ -5,6 +5,8 @@ Released under the [Creative Commons Share Alike (CC-BY-SA) License](https://cre
 
 Attributions:
 
-Andrew Litt (dervelerper)
+Andrew Litt (dev)
+
 Jerry Dunmire (for the esp8266 Kicad library https://github.com/jdunmire/kicad-ESP8266)
+
 
