@@ -36,8 +36,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "ESP8266 WiFi Module for Raspberry Pi"
-Date "2016-01-16"
-Rev "v0.1"
+Date "2016-01-28"
+Rev "v2"
 Comp "Andrew Litt"
 Comment1 "https://github.com/al177/wifi_pants"
 Comment2 "Licensed under Creative Commons Attribution Share-Alike"
@@ -102,27 +102,27 @@ F 3 "" H 8050 4300 50  0000 C CNN
 	1    8050 4300
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 7350 3    39   BiDi ~ 0
+Text GLabel 4150 7600 3    39   BiDi ~ 0
 SD_CLK
-Text GLabel 3650 7350 3    39   BiDi ~ 0
+Text GLabel 3650 7600 3    39   BiDi ~ 0
 SD_CMD
-Text GLabel 3750 7350 3    39   BiDi ~ 0
+Text GLabel 3750 7600 3    39   BiDi ~ 0
 SD_D0
-Text GLabel 4050 7350 3    39   BiDi ~ 0
+Text GLabel 4050 7600 3    39   BiDi ~ 0
 SD_D1
 Text GLabel 8550 3750 0    39   BiDi ~ 0
 GPIO5
-Text GLabel 2000 5600 0    39   Input ~ 0
+Text GLabel 2000 5150 0    39   Input ~ 0
 GPIO5
 $Comp
 L GND #PWR04
 U 1 1 56676CA4
-P 5700 6850
-F 0 "#PWR04" H 5700 6600 50  0001 C CNN
-F 1 "GND" H 5700 6700 50  0000 C CNN
-F 2 "" H 5700 6850 50  0000 C CNN
-F 3 "" H 5700 6850 50  0000 C CNN
-	1    5700 6850
+P 5350 5950
+F 0 "#PWR04" H 5350 5700 50  0001 C CNN
+F 1 "GND" H 5350 5800 50  0000 C CNN
+F 2 "" H 5350 5950 50  0000 C CNN
+F 3 "" H 5350 5950 50  0000 C CNN
+	1    5350 5950
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8700 2450
@@ -143,24 +143,23 @@ NoConn ~ 9200 4050
 $Comp
 L +3.3V #PWR05
 U 1 1 5667E37B
-P 8050 3100
-F 0 "#PWR05" H 8050 2950 50  0001 C CNN
-F 1 "+3.3V" H 8050 3240 50  0000 C CNN
-F 2 "" H 8050 3100 50  0000 C CNN
-F 3 "" H 8050 3100 50  0000 C CNN
-	1    8050 3100
+P 8050 2300
+F 0 "#PWR05" H 8050 2150 50  0001 C CNN
+F 1 "+3.3V" H 8050 2440 50  0000 C CNN
+F 2 "" H 8050 2300 50  0000 C CNN
+F 3 "" H 8050 2300 50  0000 C CNN
+	1    8050 2300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8700 2350
 $Comp
 L PWR_FLAG #FLG06
 U 1 1 566B25ED
-P 7750 3150
-F 0 "#FLG06" H 7750 3245 50  0001 C CNN
-F 1 "PWR_FLAG" H 7750 3330 50  0000 C CNN
-F 2 "" H 7750 3150 50  0000 C CNN
-F 3 "" H 7750 3150 50  0000 C CNN
-	1    7750 3150
+P 7750 2350
+F 0 "#FLG06" H 7750 2445 50  0001 C CNN
+F 1 "PWR_FLAG" H 7750 2530 50  0000 C CNN
+F 2 "" H 7750 2350 50  0000 C CNN
+F 3 "" H 7750 2350 50  0000 C CNN
+	1    7750 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -174,109 +173,23 @@ F 3 "" H 9950 4200 50  0000 C CNN
 	1    9950 4200
 	1    0    0    -1  
 $EndComp
-$Comp
-L TEST_1P W5
-U 1 1 5680DA2B
-P 5650 5050
-F 0 "W5" H 5650 5320 50  0000 C CNN
-F 1 "ESP_TXD" H 5550 5250 50  0000 C CNN
-F 2 "wifi_pants:Measurement_Point_Round-SMD-Pad_Small" H 5850 5050 50  0001 C CNN
-F 3 "" H 5850 5050 50  0000 C CNN
-F 4 "NA" H 5650 5050 60  0001 C CNN "MFG Name"
-F 5 "NA" H 5650 5050 60  0001 C CNN "MFG Part Num"
-F 6 "NA" H 5650 5050 60  0001 C CNN "Digikey PN"
-F 7 "NA" H 5650 5050 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 5650 5050 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 5650 5050 60  0001 C CNN "2nd Distrib Link"
-	1    5650 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W6
-U 1 1 5680DAEE
-P 5650 5250
-F 0 "W6" H 5650 5520 50  0000 C CNN
-F 1 "ESP_RXD" H 5750 5450 50  0000 C CNN
-F 2 "wifi_pants:Measurement_Point_Round-SMD-Pad_Small" H 5850 5250 50  0001 C CNN
-F 3 "" H 5850 5250 50  0000 C CNN
-F 4 "NA" H 5650 5250 60  0001 C CNN "MFG Name"
-F 5 "NA" H 5650 5250 60  0001 C CNN "MFG Part Num"
-F 6 "NA" H 5650 5250 60  0001 C CNN "Digikey PN"
-F 7 "NA" H 5650 5250 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 5650 5250 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 5650 5250 60  0001 C CNN "2nd Distrib Link"
-	1    5650 5250
-	0    1    1    0   
-$EndComp
-NoConn ~ 8700 3650
 NoConn ~ 9200 3650
-$Comp
-L Jumper_NO_Small JP4
-U 1 1 5689F2D7
-P 5500 6400
-F 0 "JP4" H 5500 6350 50  0000 C CNN
-F 1 "MTDO" H 5200 6300 50  0000 C CNN
-F 2 "wifi_pants:GS2" H 5500 6400 50  0001 C CNN
-F 3 "" H 5500 6400 50  0000 C CNN
-F 4 "NA" H 5500 6400 60  0001 C CNN "MFG Name"
-F 5 "NA" H 5500 6400 60  0001 C CNN "MFG Part Num"
-F 6 "NA" H 5500 6400 60  0001 C CNN "1st Distrib PN"
-F 7 "NA" H 5500 6400 60  0001 C CNN "1st Distrib Link"
-F 8 "NA" H 5500 6400 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 5500 6400 60  0001 C CNN "2nd Distrib Link"
-	1    5500 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper_NO_Small JP5
-U 1 1 5689F39E
-P 5700 6400
-F 0 "JP5" H 5700 6350 50  0000 C CNN
-F 1 "GPIO2" H 5400 6300 50  0000 C CNN
-F 2 "wifi_pants:GS2" H 5700 6400 50  0001 C CNN
-F 3 "" H 5700 6400 50  0000 C CNN
-F 4 "NA" H 5700 6400 60  0001 C CNN "MFG Name"
-F 5 "NA" H 5700 6400 60  0001 C CNN "MFG Part Num"
-F 6 "NA" H 5700 6400 60  0001 C CNN "1st Distrib PN"
-F 7 "NA" H 5700 6400 60  0001 C CNN "1st Distrib Link"
-F 8 "NA" H 5700 6400 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 5700 6400 60  0001 C CNN "2nd Distrib Link"
-	1    5700 6400
-	0    1    1    0   
-$EndComp
 $Comp
 L Jumper_NO_Small JP6
 U 1 1 5689F45A
-P 5900 6400
-F 0 "JP6" H 5900 6350 50  0000 C CNN
-F 1 "GPIO0" H 5600 6300 50  0000 C CNN
-F 2 "wifi_pants:GS2" H 5900 6400 50  0001 C CNN
-F 3 "" H 5900 6400 50  0000 C CNN
-F 4 "NA" H 5900 6400 60  0001 C CNN "MFG Name"
-F 5 "NA" H 5900 6400 60  0001 C CNN "MFG Part Num"
-F 6 "NA" H 5900 6400 60  0001 C CNN "1st Distrib PN"
-F 7 "NA" H 5900 6400 60  0001 C CNN "1st Distrib Link"
-F 8 "NA" H 5900 6400 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 5900 6400 60  0001 C CNN "2nd Distrib Link"
-	1    5900 6400
+P 5350 5750
+F 0 "JP6" H 5350 5700 50  0000 C CNN
+F 1 "GPIO0" H 5350 5850 50  0000 C CNN
+F 2 "wifi_pants:GS2" H 5350 5750 50  0001 C CNN
+F 3 "" H 5350 5750 50  0000 C CNN
+F 4 "NA" H 5350 5750 60  0001 C CNN "MFG Name"
+F 5 "NA" H 5350 5750 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 5350 5750 60  0001 C CNN "1st Distrib PN"
+F 7 "NA" H 5350 5750 60  0001 C CNN "1st Distrib Link"
+F 8 "NA" H 5350 5750 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5350 5750 60  0001 C CNN "2nd Distrib Link"
+	1    5350 5750
 	0    1    1    0   
-$EndComp
-$Comp
-L R R1
-U 1 1 568A100D
-P 3650 7000
-F 0 "R1" V 3700 7200 50  0000 C CNN
-F 1 "100" V 3650 7000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3580 7000 50  0001 C CNN
-F 3 "" H 3650 7000 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 3650 7000 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF1000V" H 3650 7000 60  0001 C CNN "MFG Part Num"
-F 6 "P100HCT-ND" H 3650 7000 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 3650 7000 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 3650 7000 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 3650 7000 60  0001 C CNN "2nd Distrib Link"
-	1    3650 7000
-	-1   0    0    1   
 $EndComp
 $Comp
 L ESP-12E U1
@@ -317,12 +230,12 @@ $EndComp
 $Comp
 L +3.3V #PWR08
 U 1 1 56942D2D
-P 4550 6650
-F 0 "#PWR08" H 4550 6500 50  0001 C CNN
-F 1 "+3.3V" H 4550 6790 50  0000 C CNN
-F 2 "" H 4550 6650 50  0000 C CNN
-F 3 "" H 4550 6650 50  0000 C CNN
-	1    4550 6650
+P 4550 6400
+F 0 "#PWR08" H 4550 6250 50  0001 C CNN
+F 1 "+3.3V" H 4550 6540 50  0000 C CNN
+F 2 "" H 4550 6400 50  0000 C CNN
+F 3 "" H 4550 6400 50  0000 C CNN
+	1    4550 6400
 	1    0    0    -1  
 $EndComp
 Text Label 3950 6450 1    39   ~ 0
@@ -388,74 +301,6 @@ F 3 "" H 2750 6350 50  0000 C CNN
 	1    2750 6350
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R2
-U 1 1 5694A8A2
-P 3750 7000
-F 0 "R2" V 3800 7200 50  0000 C CNN
-F 1 "100" V 3750 7000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3680 7000 50  0001 C CNN
-F 3 "" H 3750 7000 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 3750 7000 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF1000V" H 3750 7000 60  0001 C CNN "MFG Part Num"
-F 6 "P100HCT-ND" H 3750 7000 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 3750 7000 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 3750 7000 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 3750 7000 60  0001 C CNN "2nd Distrib Link"
-	1    3750 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R4
-U 1 1 5694A8F6
-P 4050 7000
-F 0 "R4" V 4100 7200 50  0000 C CNN
-F 1 "100" V 4050 7000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 7000 50  0001 C CNN
-F 3 "" H 4050 7000 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 4050 7000 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF1000V" H 4050 7000 60  0001 C CNN "MFG Part Num"
-F 6 "P100HCT-ND" H 4050 7000 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 4050 7000 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4050 7000 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4050 7000 60  0001 C CNN "2nd Distrib Link"
-	1    4050 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R5
-U 1 1 5694A957
-P 4150 7000
-F 0 "R5" V 4200 7200 50  0000 C CNN
-F 1 "100" V 4150 7000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 7000 50  0001 C CNN
-F 3 "" H 4150 7000 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 4150 7000 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF1000V" H 4150 7000 60  0001 C CNN "MFG Part Num"
-F 6 "P100HCT-ND" H 4150 7000 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1000V/P100HCT-ND/198109" H 4150 7000 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4150 7000 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4150 7000 60  0001 C CNN "2nd Distrib Link"
-	1    4150 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R3
-U 1 1 56942A8D
-P 4400 6750
-F 0 "R3" V 4350 6550 50  0000 C CNN
-F 1 "1K" V 4400 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4330 6750 50  0001 C CNN
-F 3 "" H 4400 6750 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 4400 6750 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF1001V" H 4400 6750 60  0001 C CNN "MFG Part Num"
-F 6 "P1.00KHCT-ND" H 4400 6750 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1001V/P1.00KHCT-ND/198071" H 4400 6750 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4400 6750 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4400 6750 60  0001 C CNN "2nd Distrib Link"
-	1    4400 6750
-	0    1    1    0   
-$EndComp
 Text GLabel 9300 2650 2    39   Output ~ 0
 PI_UART0_TXD
 Text GLabel 9300 2750 2    39   Input ~ 0
@@ -477,17 +322,16 @@ F 3 "" H 8650 2000 50  0000 C CNN
 $EndComp
 NoConn ~ 8750 1150
 NoConn ~ 8750 1550
-NoConn ~ 8700 4150
-Text Notes 3300 7050 2    60   ~ 0
+Text Notes 3250 7050 2    60   ~ 0
 Solder JP3 in ICT\nafter disabling\nQSPI mode on\nmodule\n
-Text GLabel 8550 2950 0    39   Output ~ 0
-GPIO27
+Text GLabel 8550 2950 0    39   BiDi ~ 0
+SD_D3
 $Comp
 L Jumper_NO_Small JP1
 U 1 1 5696DC67
 P 2300 5250
 F 0 "JP1" H 2300 5330 50  0000 C CNN
-F 1 "27" H 2310 5190 50  0001 C CNN
+F 1 "GPIO5" H 2310 5190 50  0001 C CNN
 F 2 "wifi_pants:GS2" H 2300 5250 50  0001 C CNN
 F 3 "" H 2300 5250 50  0000 C CNN
 	1    2300 5250
@@ -498,16 +342,16 @@ L Jumper_NO_Small JP2
 U 1 1 5696DDEC
 P 2300 5500
 F 0 "JP2" H 2300 5580 50  0000 C CNN
-F 1 "5" H 2310 5440 50  0001 C CNN
+F 1 "ID_SD" H 2310 5440 50  0001 C CNN
 F 2 "wifi_pants:GS2" H 2300 5500 50  0001 C CNN
 F 3 "" H 2300 5500 50  0000 C CNN
 	1    2300 5500
 	0    1    1    0   
 $EndComp
-Text GLabel 2000 5150 0    39   Input ~ 0
-GPIO27
-Text Notes 550  5500 0    60   ~ 0
-CHIP_EN source:\nGPIO5 jumper shorted by trace\nGPIO27 alternate if SD_D3 can be\n  separately remapped
+Text GLabel 2000 5600 0    39   Input ~ 0
+ID_SD
+Text Notes 750  5050 0    60   ~ 0
+CHIP_EN source:\n*ID_SD jumper shorted by trace.\n  ID_SD is hijacked after\n  power-up to drive the reset.\n*GPIO5 alternate if ID_SD is\n  not possible
 Text GLabel 9300 3850 2    39   Output ~ 0
 PWM0_DAC_R
 Text GLabel 8550 3950 0    39   Output ~ 0
@@ -516,8 +360,8 @@ $Comp
 L CONN_01X10 P2
 U 1 1 56998AF2
 P 8950 1500
-F 0 "P2" H 8950 2050 50  0000 C CNN
-F 1 "CONN_01X10" V 9050 1500 50  0000 C CNN
+F 0 "P2" H 8950 2100 50  0000 C CNN
+F 1 "CONN_01X10" H 8950 2200 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x10" H 8950 1500 50  0001 C CNN
 F 3 "" H 8950 1500 50  0000 C CNN
 	1    8950 1500
@@ -528,7 +372,7 @@ L +5V #PWR013
 U 1 1 56999E44
 P 9300 2200
 F 0 "#PWR013" H 9300 2050 50  0001 C CNN
-F 1 "+5V" H 9300 2340 50  0000 C CNN
+F 1 "+5V" H 9400 2250 50  0000 C CNN
 F 2 "" H 9300 2200 50  0000 C CNN
 F 3 "" H 9300 2200 50  0000 C CNN
 	1    9300 2200
@@ -561,7 +405,7 @@ L PWR_FLAG #FLG015
 U 1 1 5699B78B
 P 9400 2450
 F 0 "#FLG015" H 9400 2545 50  0001 C CNN
-F 1 "PWR_FLAG" H 9400 2630 50  0000 C CNN
+F 1 "PWR_FLAG" H 9700 2550 50  0000 C CNN
 F 2 "" H 9400 2450 50  0000 C CNN
 F 3 "" H 9400 2450 50  0000 C CNN
 	1    9400 2450
@@ -602,10 +446,10 @@ F 9 "NA" H 6550 2100 60  0001 C CNN "2nd Distrib Link"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L R R10
 U 1 1 5699CB2A
 P 6100 1650
-F 0 "R8" V 6150 1850 50  0000 C CNN
+F 0 "R10" V 6150 1850 50  0000 C CNN
 F 1 "150" V 6100 1650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6030 1650 50  0001 C CNN
 F 3 "" H 6100 1650 50  0000 C CNN
@@ -636,10 +480,10 @@ F 9 "NA" H 6100 2350 60  0001 C CNN "2nd Distrib Link"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R6
+L R R8
 U 1 1 5699D025
 P 5350 1400
-F 0 "R6" V 5400 1600 50  0000 C CNN
+F 0 "R8" V 5400 1600 50  0000 C CNN
 F 1 "270" V 5350 1400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5280 1400 50  0001 C CNN
 F 3 "" H 5350 1400 50  0000 C CNN
@@ -703,6 +547,61 @@ F 9 "NA" H 5850 1650 60  0001 C CNN "2nd Distrib Link"
 	1    5850 1650
 	-1   0    0    1   
 $EndComp
+$Comp
+L GND #PWR016
+U 1 1 5699D848
+P 6000 1900
+F 0 "#PWR016" H 6000 1650 50  0001 C CNN
+F 1 "GND" H 6000 1750 50  0000 C CNN
+F 2 "" H 6000 1900 50  0000 C CNN
+F 3 "" H 6000 1900 50  0000 C CNN
+	1    6000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5699D8AD
+P 6000 2600
+F 0 "#PWR017" H 6000 2350 50  0001 C CNN
+F 1 "GND" H 6000 2450 50  0000 C CNN
+F 2 "" H 6000 2600 50  0000 C CNN
+F 3 "" H 6000 2600 50  0000 C CNN
+	1    6000 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 2100 0    39   Input ~ 0
+PWM1_DAC_L
+Text GLabel 4950 1400 0    39   Input ~ 0
+PWM0_DAC_R
+$Comp
+L Jumper_NO_Small JP5
+U 1 1 56A662E2
+P 4550 6600
+F 0 "JP5" H 4550 6700 50  0000 C CNN
+F 1 "WP_DISABLE" H 4500 6800 50  0000 C CNN
+F 2 "wifi_pants:GS2" H 4550 6600 50  0001 C CNN
+F 3 "" H 4550 6600 50  0000 C CNN
+F 4 "NA" H 4550 6600 60  0001 C CNN "MFG Name"
+F 5 "NA" H 4550 6600 60  0001 C CNN "MFG Part Num"
+F 6 "NA" H 4550 6600 60  0001 C CNN "1st Distrib PN"
+F 7 "NA" H 4550 6600 60  0001 C CNN "1st Distrib Link"
+F 8 "NA" H 4550 6600 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 4550 6600 60  0001 C CNN "2nd Distrib Link"
+	1    4550 6600
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 4150 0    39   BiDi ~ 0
+SD_D2
+Text GLabel 8550 3650 0    39   BiDi ~ 0
+ID_SD
+Text GLabel 3850 7600 3    39   BiDi ~ 0
+SD_D2
+Text GLabel 3950 7600 3    39   BiDi ~ 0
+SD_D3
+Text Notes 4300 7500 0    60   ~ 0
+For 4-bit SDIO, populate the\nSD_D2 and SD_D3 resistors\nand cut JP5.  Use with ESP-12F\nmodule with removed flash or\nproposed SPI flash sleep mode
+Text Notes 4850 1150 0    60   ~ 0
+Remove R6 and R7\nto reclaim GPIO16 and\nGPIO26
 Wire Wire Line
 	9200 3250 9950 3250
 Wire Wire Line
@@ -732,53 +631,28 @@ Wire Wire Line
 	8050 3550 8700 3550
 Connection ~ 8050 4250
 Wire Wire Line
-	4150 6350 4150 6850
+	4150 6350 4150 7100
 Wire Wire Line
-	3650 6350 3650 6850
+	3650 6350 3650 7100
 Wire Wire Line
-	3750 6350 3750 6850
+	3750 6350 3750 7100
 Wire Wire Line
-	4050 6350 4050 6850
+	4050 6350 4050 7100
 Wire Wire Line
-	4150 7150 4150 7350
+	4150 7400 4150 7600
 Wire Wire Line
-	3650 7150 3650 7350
+	3650 7400 3650 7600
 Wire Wire Line
-	3750 7150 3750 7350
+	3750 7400 3750 7600
 Wire Wire Line
-	4050 7150 4050 7350
+	4050 7400 4050 7600
 Wire Wire Line
 	8700 3750 8550 3750
 Wire Wire Line
 	2300 5350 3000 5350
 Wire Wire Line
-	5500 6500 5500 6750
-Wire Wire Line
-	5500 6750 5900 6750
-Wire Wire Line
-	5900 6750 5900 6500
-Wire Wire Line
-	5700 6500 5700 6850
-Connection ~ 5700 6750
-Wire Wire Line
-	5500 5750 5500 6300
-Wire Wire Line
-	5700 5650 5700 6300
-Wire Wire Line
-	5900 5550 5900 6300
-Wire Wire Line
 	9950 4200 9750 4200
 Connection ~ 9750 4200
-Wire Wire Line
-	4800 5150 4950 5150
-Wire Wire Line
-	4950 5150 4950 5050
-Wire Wire Line
-	4800 5750 5500 5750
-Wire Wire Line
-	4800 5650 5700 5650
-Wire Wire Line
-	4800 5550 5900 5550
 Wire Wire Line
 	4800 5850 4900 5850
 Wire Wire Line
@@ -788,30 +662,22 @@ Wire Wire Line
 Wire Wire Line
 	2750 5800 2750 5950
 Wire Wire Line
-	7750 3150 8700 3150
+	7750 2350 8700 2350
 Wire Wire Line
-	8050 3150 8050 3100
-Connection ~ 8050 3150
+	8050 2350 8050 2300
+Connection ~ 8050 2350
 Connection ~ 2750 5850
 Wire Wire Line
 	2750 6250 2750 6350
-Wire Wire Line
-	4950 5050 5650 5050
-Wire Wire Line
-	4800 5250 5650 5250
 Wire Wire Line
 	3450 6550 3450 6500
 Wire Wire Line
 	3450 6500 3650 6500
 Connection ~ 3650 6500
-Wire Wire Line
-	3850 6750 3450 6750
 Connection ~ 3850 6750
 Wire Wire Line
-	3950 6750 4250 6750
+	3950 6750 4550 6750
 Connection ~ 3950 6750
-Wire Wire Line
-	4550 6750 4550 6650
 Wire Wire Line
 	9200 2650 9300 2650
 Wire Wire Line
@@ -825,9 +691,9 @@ Wire Wire Line
 Wire Wire Line
 	8750 1450 8600 1450
 Wire Wire Line
-	3850 6350 3850 6750
+	3850 6350 3850 7100
 Wire Wire Line
-	3950 6350 3950 6750
+	3950 6350 3950 7100
 Wire Wire Line
 	8550 2950 8700 2950
 Wire Wire Line
@@ -877,28 +743,6 @@ Connection ~ 5850 1400
 Wire Wire Line
 	6100 1500 6100 1400
 Connection ~ 6100 1400
-$Comp
-L GND #PWR016
-U 1 1 5699D848
-P 6000 1900
-F 0 "#PWR016" H 6000 1650 50  0001 C CNN
-F 1 "GND" H 6000 1750 50  0000 C CNN
-F 2 "" H 6000 1900 50  0000 C CNN
-F 3 "" H 6000 1900 50  0000 C CNN
-	1    6000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR017
-U 1 1 5699D8AD
-P 6000 2600
-F 0 "#PWR017" H 6000 2350 50  0001 C CNN
-F 1 "GND" H 6000 2450 50  0000 C CNN
-F 2 "" H 6000 2600 50  0000 C CNN
-F 3 "" H 6000 2600 50  0000 C CNN
-	1    6000 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 1800 6100 1800
 Wire Wire Line
@@ -929,12 +773,267 @@ Wire Wire Line
 	7050 2100 7050 1850
 Wire Wire Line
 	7050 1850 8750 1850
-Text GLabel 4950 2100 0    39   Input ~ 0
-PWM1_DAC_L
-Text GLabel 4950 1400 0    39   Input ~ 0
-PWM0_DAC_R
 Wire Wire Line
 	5200 1400 4950 1400
 Wire Wire Line
 	5200 2100 4950 2100
+Wire Wire Line
+	4550 6750 4550 6700
+Wire Wire Line
+	4550 6500 4550 6400
+Wire Wire Line
+	8700 4150 8550 4150
+Wire Wire Line
+	8550 3650 8700 3650
+Wire Wire Line
+	3850 7600 3850 7400
+Wire Wire Line
+	3950 7600 3950 7400
+Wire Wire Line
+	4550 6450 4500 6450
+Wire Wire Line
+	4500 6450 4500 6750
+Connection ~ 4500 6750
+Connection ~ 4550 6450
+Wire Wire Line
+	3850 6750 3450 6750
+Wire Notes Line
+	3800 6950 3800 7550
+Wire Notes Line
+	3800 7550 4000 7550
+Wire Notes Line
+	4000 7550 4000 6950
+Wire Notes Line
+	4000 6950 3800 6950
+Wire Notes Line
+	5100 1250 5100 2300
+Wire Notes Line
+	5100 2300 5550 2300
+Wire Notes Line
+	5550 2300 5550 1250
+Wire Notes Line
+	5550 1250 5100 1250
+Wire Notes Line
+	2200 5100 2200 5650
+Wire Notes Line
+	2200 4850 2250 4850
+Wire Notes Line
+	2250 4850 2250 5100
+Wire Notes Line
+	3300 6350 3300 6900
+Wire Notes Line
+	3300 6900 3500 6900
+Wire Notes Line
+	3500 6900 3500 6350
+Wire Notes Line
+	3500 6350 3300 6350
+Wire Notes Line
+	4850 6300 4400 6300
+Wire Notes Line
+	4400 6300 4400 6800
+Wire Notes Line
+	4400 6800 4850 6800
+Wire Notes Line
+	4850 6800 4850 6300
+Wire Notes Line
+	4600 6800 4600 7000
+Wire Notes Line
+	4000 7100 4250 7100
+Wire Notes Line
+	2200 5100 2450 5100
+Wire Notes Line
+	2450 5100 2450 5650
+Wire Notes Line
+	2450 5650 2200 5650
+Text Notes 9100 1050 0    39   ~ 0
+GND
+Text Notes 9100 1150 0    39   ~ 0
+CTS (NC)
+Text Notes 9100 1250 0    39   ~ 0
+VBUS/5V0(NC)
+Text Notes 9100 1350 0    39   ~ 0
+TXD
+Text Notes 9100 1450 0    39   ~ 0
+RXD
+Text Notes 9100 1550 0    39   ~ 0
+RTS(NC)
+Text Notes 9650 1450 1    39   ~ 0
+FTDI 6-pin
+Text Notes 9100 1650 0    39   ~ 0
+GND
+Text Notes 9100 1850 0    39   ~ 0
+AUDIO_OUT_R
+Text Notes 9100 1750 0    39   ~ 0
+AUDIO_OUT_L
+Text Notes 9100 1950 0    39   ~ 0
+GND
+Text Notes 9700 1950 1    39   ~ 0
+PWM audio\nline out
+Wire Notes Line
+	8950 2000 9750 2000
+Wire Notes Line
+	8950 1550 9750 1550
+Wire Notes Line
+	8950 2000 8950 950 
+Wire Notes Line
+	8950 950  9750 950 
+Wire Notes Line
+	9750 950  9750 2000
+Text Notes 7400 950  0    59   ~ 0
+Solder to allow the\nPi to be powered from\nthe header
+Wire Notes Line
+	8100 1150 8100 1400
+Wire Notes Line
+	8100 1400 7800 1400
+Wire Notes Line
+	7800 1400 7800 1150
+Wire Notes Line
+	7800 1150 8100 1150
+Wire Notes Line
+	8000 900  8000 1150
+Wire Notes Line
+	5400 1100 5400 1250
+NoConn ~ 4800 5150
+NoConn ~ 4800 5250
+NoConn ~ 4800 5650
+NoConn ~ 4800 5750
+Text Notes 4950 5200 0    59   ~ 0
+For dev and debug, use\nthe top side of the module\ncastellations for the following:\nTXD, RXD, GPIO2, MTDO
+Wire Notes Line
+	4750 5100 4750 5300
+Wire Notes Line
+	4750 5300 4850 5300
+Wire Notes Line
+	4850 5300 4850 5100
+Wire Notes Line
+	4850 5100 4750 5100
+Wire Notes Line
+	4750 5600 4750 5800
+Wire Notes Line
+	4750 5800 4850 5800
+Wire Notes Line
+	4850 5800 4850 5600
+Wire Notes Line
+	4850 5600 4750 5600
+Wire Wire Line
+	4800 5550 5350 5550
+Wire Wire Line
+	5350 5550 5350 5650
+Wire Wire Line
+	5350 5850 5350 5950
+Text Notes 5600 5900 0    59   ~ 0
+Solder to force SDIO to\nlow speed v1 (25MHz)\nDefault is\nhigh speed v2 (50MHz)
+Wire Notes Line
+	5250 5600 5500 5600
+Wire Notes Line
+	5500 5600 5500 5900
+Wire Notes Line
+	5500 5900 5250 5900
+Wire Notes Line
+	5250 5900 5250 5600
+$Comp
+L R R4
+U 1 1 56A805AD
+P 3650 7250
+F 0 "R4" V 3700 7450 50  0000 C CNN
+F 1 "150" V 3650 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3580 7250 50  0001 C CNN
+F 3 "" H 3650 7250 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 3650 7250 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1500V" H 3650 7250 60  0001 C CNN "MFG Part Num"
+F 6 "P150HCT-ND" H 3650 7250 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1500V/P150HCT-ND/198177" H 3650 7250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 3650 7250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3650 7250 60  0001 C CNN "2nd Distrib Link"
+	1    3650 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 56A80B13
+P 3750 7250
+F 0 "R5" V 3800 7450 50  0000 C CNN
+F 1 "150" V 3750 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3680 7250 50  0001 C CNN
+F 3 "" H 3750 7250 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 3750 7250 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1500V" H 3750 7250 60  0001 C CNN "MFG Part Num"
+F 6 "P150HCT-ND" H 3750 7250 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1500V/P150HCT-ND/198177" H 3750 7250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 3750 7250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3750 7250 60  0001 C CNN "2nd Distrib Link"
+	1    3750 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 56A80BBB
+P 3850 7250
+F 0 "R6" V 3900 7450 50  0000 C CNN
+F 1 "150-DNP" V 3850 7150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3780 7250 50  0001 C CNN
+F 3 "" H 3850 7250 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 3850 7250 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1500V" H 3850 7250 60  0001 C CNN "MFG Part Num"
+F 6 "P150HCT-ND" H 3850 7250 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1500V/P150HCT-ND/198177" H 3850 7250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 3850 7250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3850 7250 60  0001 C CNN "2nd Distrib Link"
+	1    3850 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 56A80C30
+P 3950 7250
+F 0 "R1" V 4000 7450 50  0000 C CNN
+F 1 "150-DNP" V 3950 7150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3880 7250 50  0001 C CNN
+F 3 "" H 3950 7250 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 3950 7250 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1500V" H 3950 7250 60  0001 C CNN "MFG Part Num"
+F 6 "P150HCT-ND" H 3950 7250 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1500V/P150HCT-ND/198177" H 3950 7250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 3950 7250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 3950 7250 60  0001 C CNN "2nd Distrib Link"
+	1    3950 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 56A80CAC
+P 4050 7250
+F 0 "R3" V 4100 7450 50  0000 C CNN
+F 1 "150" V 4050 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 7250 50  0001 C CNN
+F 3 "" H 4050 7250 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 4050 7250 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1500V" H 4050 7250 60  0001 C CNN "MFG Part Num"
+F 6 "P150HCT-ND" H 4050 7250 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1500V/P150HCT-ND/198177" H 4050 7250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 4050 7250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 4050 7250 60  0001 C CNN "2nd Distrib Link"
+	1    4050 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 56A80D27
+P 4150 7250
+F 0 "R2" V 4200 7450 50  0000 C CNN
+F 1 "150" V 4150 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 7250 50  0001 C CNN
+F 3 "" H 4150 7250 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 4150 7250 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1500V" H 4150 7250 60  0001 C CNN "MFG Part Num"
+F 6 "P150HCT-ND" H 4150 7250 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1500V/P150HCT-ND/198177" H 4150 7250 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 4150 7250 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 4150 7250 60  0001 C CNN "2nd Distrib Link"
+	1    4150 7250
+	-1   0    0    1   
+$EndComp
+Text Label 4350 6750 1    60   ~ 0
+SD_D3_WPDIS
+NoConn ~ 8700 3150
 $EndSCHEMATC
