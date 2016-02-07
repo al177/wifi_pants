@@ -1,4 +1,4 @@
-update=1/11/2016 12:08:36 PM
+update=2/3/2016 12:33:07 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../wifi_pants
 [eeschema/libraries]
 LibName1=power
 LibName2=device
