@@ -9,4 +9,4 @@ Andrew Litt (dev)
 
 Jerry Dunmire (for the esp8266 Kicad library https://github.com/jdunmire/kicad-ESP8266)
 
-
+Mike Cousins (for the nice mcous discrete footprints https://github.com/mcous/kicad-lib)
