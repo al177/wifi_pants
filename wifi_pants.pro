@@ -1,4 +1,4 @@
-update=1/11/2016 12:08:36 PM
+update=2/10/2016 10:12:21 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/dl/kicad-ESP8266-master/ESP8266
+LibName31=wifi_pants-cache
