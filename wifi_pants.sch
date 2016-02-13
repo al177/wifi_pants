@@ -308,10 +308,10 @@ For dev and debug, use\nthe top side of the module\ncastellations for the follow
 Text Notes 5600 5900 0    59   ~ 0
 Solder to force SDIO to\nlow speed v1 (25MHz)\nDefault is\nhigh speed v2 (50MHz)
 $Comp
-L R R4
+L R R3
 U 1 1 56A805AD
 P 3650 7250
-F 0 "R4" V 3700 7450 50  0000 C CNN
+F 0 "R3" V 3700 7450 50  0000 C CNN
 F 1 "33" V 3650 7250 50  0000 C CNN
 F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 3580 7250 50  0001 C CNN
 F 3 "" H 3650 7250 50  0000 C CNN
@@ -341,7 +341,7 @@ Text GLabel 7500 1000 0    39   Output ~ 0
 /PSU_SHDN
 Text Notes 9100 1200 0    39   ~ 0
 /PSU_SHDN
-Text GLabel 1000 3200 0    39   Input ~ 0
+Text GLabel 1150 2450 0    39   Input ~ 0
 /PSU_SHDN
 Text GLabel 7500 1300 0    39   Output ~ 0
 PWR_IN
@@ -376,231 +376,63 @@ NoConn ~ 9200 3850
 NoConn ~ 8700 3950
 Text Notes 9100 1300 0    39   ~ 0
 PWR_IN
-$Comp
-L TPS61252 U2
-U 1 1 56BB62BB
-P 3200 2300
-F 0 "U2" H 3200 2450 60  0000 C CNN
-F 1 "TPS61252" H 3200 2100 60  0000 C CNN
-F 2 "wifi_pants:WSON-8-1EP_2x2mm_Pitch0.5mm" H 3200 2100 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps61252.pdf" H 3200 2100 60  0001 C CNN
-F 4 "Texas Instruments" H 3300 2550 60  0001 C CNN "MFG Name"
-F 5 "TPS61252DSGR" H 3400 2650 60  0001 C CNN "MFG Part Num"
-F 6 "296-39439-1-ND" H 3500 2750 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/TPS61252DSGR/296-39439-1-ND" H 3600 2850 60  0001 C CNN "Digikey Link"
-	1    3200 2300
-	1    0    0    -1  
-$EndComp
-Text GLabel 850  2300 0    39   Output ~ 0
+Text GLabel 1200 1600 0    39   Output ~ 0
 PWR_IN
-$Comp
-L R R9
-U 1 1 56BB7ABF
-P 4200 2600
-F 0 "R9" V 4250 2800 50  0000 C CNN
-F 1 "243K" V 4200 2600 50  0000 C CNN
-F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 4130 2600 50  0001 C CNN
-F 3 "" H 4200 2600 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 4200 2600 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF2433V" H 4200 2600 60  0001 C CNN "MFG Part Num"
-F 6 "P243KHCT-ND" H 4200 2600 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF2433V/P243KHCT-ND/198273" H 4200 2600 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4200 2600 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4200 2600 60  0001 C CNN "2nd Distrib Link"
-	1    4200 2600
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R8
-U 1 1 56BB8A86
-P 4200 1950
-F 0 "R8" V 4250 2150 50  0000 C CNN
-F 1 "768K" V 4200 1950 50  0000 C CNN
-F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 4130 1950 50  0001 C CNN
-F 3 "" H 4200 1950 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 4200 1950 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF7683V" H 4200 1950 60  0001 C CNN "MFG Part Num"
-F 6 "P768KHCT-ND" H 4200 1950 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF2433V/P243KHCT-ND/198273" H 4200 1950 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4200 1950 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4200 1950 60  0001 C CNN "2nd Distrib Link"
-	1    4200 1950
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R7
-U 1 1 56BB8C7C
-P 1450 2500
-F 0 "R7" V 1500 2700 50  0000 C CNN
-F 1 "243K" V 1450 2500 50  0000 C CNN
-F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 1380 2500 50  0001 C CNN
-F 3 "" H 1450 2500 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 1450 2500 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3EKF2433V" H 1450 2500 60  0001 C CNN "MFG Part Num"
-F 6 "P243KHCT-ND" H 1450 2500 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF2433V/P243KHCT-ND/198273" H 1450 2500 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 1450 2500 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 1450 2500 60  0001 C CNN "2nd Distrib Link"
-	1    1450 2500
-	-1   0    0    1   
-$EndComp
 $Comp
 L GND #PWR012
 U 1 1 56BB8F1D
-P 2800 3550
-F 0 "#PWR012" H 2800 3300 50  0001 C CNN
-F 1 "GND" H 2800 3400 50  0000 C CNN
-F 2 "" H 2800 3550 50  0000 C CNN
-F 3 "" H 2800 3550 50  0000 C CNN
-	1    2800 3550
+P 3250 3400
+F 0 "#PWR012" H 3250 3150 50  0001 C CNN
+F 1 "GND" H 3250 3250 50  0000 C CNN
+F 2 "" H 3250 3400 50  0000 C CNN
+F 3 "" H 3250 3400 50  0000 C CNN
+	1    3250 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR013
 U 1 1 56BB9132
-P 4200 3100
-F 0 "#PWR013" H 4200 2850 50  0001 C CNN
-F 1 "GND" H 4200 2950 50  0000 C CNN
-F 2 "" H 4200 3100 50  0000 C CNN
-F 3 "" H 4200 3100 50  0000 C CNN
-	1    4200 3100
+P 5600 2650
+F 0 "#PWR013" H 5600 2400 50  0001 C CNN
+F 1 "GND" H 5600 2500 50  0000 C CNN
+F 2 "" H 5600 2650 50  0000 C CNN
+F 3 "" H 5600 2650 50  0000 C CNN
+	1    5600 2650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4000 2900
 $Comp
 L C C4
-U 1 1 56BB9481
-P 4900 1750
-F 0 "C4" H 4925 1850 50  0000 L CNN
-F 1 "10uF X5R" V 5050 1300 50  0000 L CNN
-F 2 "mcous:1206(3216m)-CHIP-CAP" H 4938 1600 50  0001 C CNN
-F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 4900 1750 50  0001 C CNN
-F 4 "Taiyo Yuden" H 4900 1750 60  0001 C CNN "MFG Name"
-F 5 "LMK316BJ106KL-T " H 4900 1750 60  0001 C CNN "MFG Part Num"
-F 6 "587-1342-1-ND" H 4900 1750 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/GRM219R60J106KE19D/490-3340-1-ND/702881" H 4900 1750 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4900 1750 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4900 1750 60  0001 C CNN "2nd Distrib Link"
-	1    4900 1750
+U 1 1 56BBBDB1
+P 5000 2050
+F 0 "C4" H 5025 2150 50  0000 L CNN
+F 1 "10uF X5R" V 5150 1600 50  0000 L CNN
+F 2 "mcous:0805(2012m)-CHIP-CAP" H 5038 1900 50  0001 C CNN
+F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5000 2050 50  0001 C CNN
+F 4 "Taiyo Yuden" H 5000 2050 60  0001 C CNN "MFG Name"
+F 5 "LMK212BJ106KG-T" H 5000 2050 60  0001 C CNN "MFG Part Num"
+F 6 "587-1300-1-ND" H 5000 2050 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/LMK212BJ106KG-T/587-1300-1-ND/931077" H 5000 2050 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 5000 2050 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5000 2050 60  0001 C CNN "2nd Distrib Link"
+	1    5000 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR014
-U 1 1 56BB96C4
-P 4900 1950
-F 0 "#PWR014" H 4900 1700 50  0001 C CNN
-F 1 "GND" H 4900 1800 50  0000 C CNN
-F 2 "" H 4900 1950 50  0000 C CNN
-F 3 "" H 4900 1950 50  0000 C CNN
-	1    4900 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR015
-U 1 1 56BB9708
-P 5500 1950
-F 0 "#PWR015" H 5500 1700 50  0001 C CNN
-F 1 "GND" H 5500 1800 50  0000 C CNN
-F 2 "" H 5500 1950 50  0000 C CNN
-F 3 "" H 5500 1950 50  0000 C CNN
-	1    5500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR016
-U 1 1 56BB9A40
-P 5500 1500
-F 0 "#PWR016" H 5500 1350 50  0001 C CNN
-F 1 "+5V" H 5600 1550 50  0000 C CNN
-F 2 "" H 5500 1500 50  0000 C CNN
-F 3 "" H 5500 1500 50  0000 C CNN
-	1    5500 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C3
-U 1 1 56BBA372
-P 4450 1950
-F 0 "C3" H 4475 2050 50  0000 L CNN
-F 1 "100pF" H 4475 1850 50  0000 L CNN
-F 2 "mcous:0805(2012m)-CHIP-CAP" H 4488 1800 50  0001 C CNN
-F 3 "" H 4450 1950 50  0000 C CNN
-F 4 "Murata Electronics North America" H 4450 1950 60  0001 C CNN "MFG Name"
-F 5 "GRM1885C1H101JA01D" H 4450 1950 60  0001 C CNN "MFG Part Num"
-F 6 "490-1427-1-ND" H 4450 1950 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/GRM1885C1H101JA01D/490-1427-1-ND/587633" H 4450 1950 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 4450 1950 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 4450 1950 60  0001 C CNN "2nd Distrib Link"
-	1    4450 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C5
-U 1 1 56BBB6DD
-P 5500 1750
-F 0 "C5" H 5525 1850 50  0000 L CNN
-F 1 "10uF X5R" V 5650 1300 50  0000 L CNN
-F 2 "mcous:1206(3216m)-CHIP-CAP" H 5538 1600 50  0001 C CNN
-F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5500 1750 50  0001 C CNN
-F 4 "Taiyo Yuden" H 5500 1750 60  0001 C CNN "MFG Name"
-F 5 "LMK316BJ106KL-T " H 5500 1750 60  0001 C CNN "MFG Part Num"
-F 6 "587-1342-1-ND" H 5500 1750 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/GRM219R60J106KE19D/490-3340-1-ND/702881" H 5500 1750 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 5500 1750 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 5500 1750 60  0001 C CNN "2nd Distrib Link"
-	1    5500 1750
-	1    0    0    -1  
-$EndComp
-Text Notes 4800 2500 0    60   ~ 0
-Must be >13uF after\nDC bias derating at 5v
-$Comp
-L C C2
-U 1 1 56BBBDB1
-P 1100 2500
-F 0 "C2" H 1125 2600 50  0000 L CNN
-F 1 "10uF X5R" V 1250 2050 50  0000 L CNN
-F 2 "mcous:1206(3216m)-CHIP-CAP" H 1138 2350 50  0001 C CNN
-F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 1100 2500 50  0001 C CNN
-F 4 "Taiyo Yuden" H 1100 2500 60  0001 C CNN "MFG Name"
-F 5 "LMK316BJ106KL-T " H 1100 2500 60  0001 C CNN "MFG Part Num"
-F 6 "587-1342-1-ND" H 1100 2500 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/GRM219R60J106KE19D/490-3340-1-ND/702881" H 1100 2500 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 1100 2500 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 1100 2500 60  0001 C CNN "2nd Distrib Link"
-	1    1100 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L INDUCTOR L1
-U 1 1 56BBC78E
-P 2200 1950
-F 0 "L1" V 2150 1950 50  0000 C CNN
-F 1 "2.2uH" V 2300 1950 50  0000 C CNN
-F 2 "wifi_pants:NR6028" H 2200 1950 50  0001 C CNN
-F 3 "http://ds.yuden.co.jp/TYCOMPAS/ap/detail.do?productNo=NR6028T2R2N&dataUnit=M" H 2200 1950 50  0001 C CNN
-F 4 "Taiyo Yuden" V 2200 1950 60  0001 C CNN "MFG Name"
-F 5 "NR6028T2R2N" V 2200 1950 60  0001 C CNN "MFG Part Num"
-F 6 "587-2098-1-ND" V 2200 1950 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/NR6028T2R2N/587-2098-1-ND/1866238" V 2200 1950 60  0001 C CNN "Digikey Link"
-	1    2200 1950
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR017
 U 1 1 56BC3486
-P 1100 2850
-F 0 "#PWR017" H 1100 2600 50  0001 C CNN
-F 1 "GND" H 1100 2700 50  0000 C CNN
-F 2 "" H 1100 2850 50  0000 C CNN
-F 3 "" H 1100 2850 50  0000 C CNN
-	1    1100 2850
+P 1400 2100
+F 0 "#PWR014" H 1400 1850 50  0001 C CNN
+F 1 "GND" H 1400 1950 50  0000 C CNN
+F 2 "" H 1400 2100 50  0000 C CNN
+F 3 "" H 1400 2100 50  0000 C CNN
+	1    1400 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG018
+L PWR_FLAG #FLG015
 U 1 1 56BC5758
 P 8450 2350
-F 0 "#FLG018" H 8450 2445 50  0001 C CNN
+F 0 "#FLG015" H 8450 2445 50  0001 C CNN
 F 1 "PWR_FLAG" H 8450 2530 50  0000 C CNN
 F 2 "" H 8450 2350 50  0000 C CNN
 F 3 "" H 8450 2350 50  0000 C CNN
@@ -608,10 +440,10 @@ F 3 "" H 8450 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG019
+L PWR_FLAG #FLG016
 U 1 1 56BC6C6B
 P 9750 3750
-F 0 "#FLG019" H 9750 3845 50  0001 C CNN
+F 0 "#FLG016" H 9750 3845 50  0001 C CNN
 F 1 "PWR_FLAG" H 9750 3930 50  0000 C CNN
 F 2 "" H 9750 3750 50  0000 C CNN
 F 3 "" H 9750 3750 50  0000 C CNN
@@ -619,10 +451,10 @@ F 3 "" H 9750 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L R R4
 U 1 1 56BC31A5
 P 3750 7250
-F 0 "R5" V 3800 7450 50  0000 C CNN
+F 0 "R4" V 3800 7450 50  0000 C CNN
 F 1 "33" V 3750 7250 50  0000 C CNN
 F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 3680 7250 50  0001 C CNN
 F 3 "" H 3750 7250 50  0000 C CNN
@@ -670,10 +502,10 @@ F 9 "NA" H 3950 7250 60  0001 C CNN "2nd Distrib Link"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R3
+L R R5
 U 1 1 56BC356F
 P 4050 7250
-F 0 "R3" V 4100 7450 50  0000 C CNN
+F 0 "R5" V 4100 7450 50  0000 C CNN
 F 1 "33" V 4050 7250 50  0000 C CNN
 F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 3980 7250 50  0001 C CNN
 F 3 "" H 4050 7250 50  0000 C CNN
@@ -702,6 +534,160 @@ F 8 "NA" H 4150 7250 60  0001 C CNN "2nd Distrib PN"
 F 9 "NA" H 4150 7250 60  0001 C CNN "2nd Distrib Link"
 	1    4150 7250
 	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper_NO_Small JP2
+U 1 1 56BC717F
+P 7850 1300
+F 0 "JP2" H 7850 1450 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7860 1240 50  0001 C CNN
+F 2 "wifi_pants:GS2" H 7850 1300 50  0001 C CNN
+F 3 "" H 7850 1300 50  0000 C CNN
+	1    7850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 56BC71CA
+P 7850 1000
+F 0 "JP1" H 7850 1150 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7860 940 50  0001 C CNN
+F 2 "wifi_pants:GS2" H 7850 1000 50  0001 C CNN
+F 3 "" H 7850 1000 50  0000 C CNN
+	1    7850 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 6950 2000 0    59   ~ 0
+Cut when using the JST\nfor power and an FTDI\ntype cable to prevent\ncontentions with\nCTS (pin 2) and\nUSB VBUS (pin 3)
+$Comp
+L R R7
+U 1 1 56BB8C7C
+P 1800 2000
+F 0 "R7" V 1850 2200 50  0000 C CNN
+F 1 "47K" V 1800 2000 50  0000 C CNN
+F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 1730 2000 50  0001 C CNN
+F 3 "" H 1800 2000 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 1800 2000 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3GEYJ223V" H 1800 2000 60  0001 C CNN "MFG Part Num"
+F 6 "P22KGCT-ND" H 1800 2000 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3GEYJ223V/P22KGCT-ND/134757" H 1800 2000 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 1800 2000 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 1800 2000 60  0001 C CNN "2nd Distrib Link"
+	1    1800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 56BBC78E
+P 3250 1150
+F 0 "L1" V 3200 1150 50  0000 C CNN
+F 1 "1.0uH" V 3350 1150 50  0000 C CNN
+F 2 "wifi_pants:SRU1028-1R" H 3250 1150 50  0001 C CNN
+F 3 "" H 3250 1150 50  0001 C CNN
+F 4 "Bourns" V 3250 1150 60  0001 C CNN "MFG Name"
+F 5 "SRU1028-1R0Y" V 3250 1150 60  0001 C CNN "MFG Part Num"
+F 6 "SRU1028-1R0YCT-ND" V 3250 1150 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/SRU1028-1R0Y/SRU1028-1R0YCT-ND/2353037" V 3250 1150 60  0001 C CNN "Digikey Link"
+	1    3250 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TPS6123x U2
+U 1 1 56BE2858
+P 3250 2200
+F 0 "U2" H 3250 2350 60  0000 C CNN
+F 1 "TPS6123x" H 3250 2200 60  0000 C CNN
+F 2 "wifi_pants:VSON-10" H 3250 2200 60  0001 C CNN
+F 3 "" H 3250 2200 60  0001 C CNN
+F 4 "TI" H 3250 2200 60  0001 C CNN "MFR Name"
+F 5 "TPS61232DRC" H 3250 2200 60  0001 C CNN "MFR Part Num"
+F 6 "296-37990-1-ND" H 3250 2200 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/TPS61232DRCT/296-37990-1-ND/4948858" H 3250 2200 60  0001 C CNN "Digikey Link"
+F 8 "595-TPS61232DRCR" H 3250 2200 60  0001 C CNN "Mouser PN"
+F 9 "http://www.mouser.com/ProductDetail/Texas-Instruments/TPS61232DRCR/?qs=sGAEpiMZZMtitjHzVIkrqfHPkqw6MffFxsx7idtWVj7LydJtWdVi6w%3d%3d" H 3250 2200 60  0001 C CNN "Mouser Link"
+	1    3250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 56BE3AE2
+P 5300 2050
+F 0 "C5" H 5325 2150 50  0000 L CNN
+F 1 "10uF X5R" V 5450 1600 50  0000 L CNN
+F 2 "mcous:0805(2012m)-CHIP-CAP" H 5338 1900 50  0001 C CNN
+F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5300 2050 50  0001 C CNN
+F 4 "Taiyo Yuden" H 5300 2050 60  0001 C CNN "MFG Name"
+F 5 "LMK212BJ106KG-T" H 5300 2050 60  0001 C CNN "MFG Part Num"
+F 6 "587-1300-1-ND" H 5300 2050 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/LMK212BJ106KG-T/587-1300-1-ND/931077" H 5300 2050 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 5300 2050 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5300 2050 60  0001 C CNN "2nd Distrib Link"
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 56BE3B54
+P 5600 2050
+F 0 "C6" H 5625 2150 50  0000 L CNN
+F 1 "10uF X5R" V 5750 1600 50  0000 L CNN
+F 2 "mcous:0805(2012m)-CHIP-CAP" H 5638 1900 50  0001 C CNN
+F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5600 2050 50  0001 C CNN
+F 4 "Taiyo Yuden" H 5600 2050 60  0001 C CNN "MFG Name"
+F 5 "LMK212BJ106KG-T" H 5600 2050 60  0001 C CNN "MFG Part Num"
+F 6 "587-1300-1-ND" H 5600 2050 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/LMK212BJ106KG-T/587-1300-1-ND/931077" H 5600 2050 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 5600 2050 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 5600 2050 60  0001 C CNN "2nd Distrib Link"
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 56BE4135
+P 1400 1900
+F 0 "C3" H 1425 2000 50  0000 L CNN
+F 1 "22uF X5R" V 1250 1700 50  0000 L CNN
+F 2 "mcous:0805(2012m)-CHIP-CAP" H 1438 1750 50  0001 C CNN
+F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 1400 1900 50  0001 C CNN
+F 4 "Taiyo Yuden" H 1400 1900 60  0001 C CNN "MFG Name"
+F 5 "LMK212BJ226MG-T" H 1400 1900 60  0001 C CNN "MFG Part Num"
+F 6 "587-1958-1-ND" H 1400 1900 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/LMK212BJ226MG-T/587-1958-1-ND/1646621" H 1400 1900 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 1400 1900 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 1400 1900 60  0001 C CNN "2nd Distrib Link"
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56BE46FB
+P 2200 2750
+F 0 "C2" H 2225 2850 50  0000 L CNN
+F 1 "0.15uF X5R" V 2400 2450 50  0000 L CNN
+F 2 "mcous:0603(1608m)-CHIP-CAP" H 2238 2600 50  0001 C CNN
+F 3 "" H 2200 2750 50  0001 C CNN
+F 4 "Murata" H 2200 2750 60  0001 C CNN "MFG Name"
+F 5 "GRM155R61A154KE19D" H 2200 2750 60  0001 C CNN "MFG Part Num"
+F 6 "490-5889-1-ND" H 2200 2750 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/GRM155R61A154KE19D/490-5889-1-ND/3315236" H 2200 2750 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 2200 2750 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 2200 2750 60  0001 C CNN "2nd Distrib Link"
+	1    2200 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2400 2200
+NoConn ~ 4100 2800
+$Comp
+L +5V #PWR017
+U 1 1 56BE6304
+P 5900 1800
+F 0 "#PWR017" H 5900 1650 50  0001 C CNN
+F 1 "+5V" H 6000 1850 50  0000 C CNN
+F 2 "" H 5900 1800 50  0000 C CNN
+F 3 "" H 5900 1800 50  0000 C CNN
+	1    5900 1800
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9950 3250 9200 3250
@@ -838,79 +824,6 @@ Wire Wire Line
 Wire Wire Line
 	9850 900  9950 900 
 Wire Wire Line
-	2400 2900 2400 3350
-Wire Wire Line
-	2400 3350 3600 3350
-Wire Wire Line
-	2800 3350 2800 3550
-Connection ~ 2800 3350
-Wire Wire Line
-	4000 1600 5500 1600
-Connection ~ 4900 1600
-Wire Wire Line
-	4900 1900 4900 1950
-Wire Wire Line
-	5500 1600 5500 1500
-Wire Wire Line
-	4200 2750 4200 3100
-Wire Wire Line
-	4200 2100 4200 2450
-Connection ~ 4200 2300
-Wire Wire Line
-	4200 1800 4200 1600
-Connection ~ 4200 1600
-Wire Wire Line
-	4450 1800 4450 1700
-Wire Wire Line
-	4450 1700 4200 1700
-Connection ~ 4200 1700
-Wire Wire Line
-	4000 2300 4200 2300
-Wire Wire Line
-	4450 2100 4450 2200
-Wire Wire Line
-	4450 2200 4200 2200
-Connection ~ 4200 2200
-Connection ~ 5500 1600
-Wire Wire Line
-	5500 1900 5500 1950
-Wire Notes Line
-	4800 1500 5800 1500
-Wire Notes Line
-	5800 1500 5800 2250
-Wire Notes Line
-	5800 2250 4800 2250
-Wire Notes Line
-	4800 2250 4800 1500
-Wire Wire Line
-	850  2300 2400 2300
-Wire Wire Line
-	2200 2250 2200 2300
-Connection ~ 2200 2300
-Wire Wire Line
-	2200 1650 2200 1600
-Wire Wire Line
-	2200 1600 2400 1600
-Wire Wire Line
-	1100 2300 1100 2350
-Wire Wire Line
-	1450 2300 1450 2350
-Connection ~ 1100 2300
-Connection ~ 1450 2300
-Wire Wire Line
-	1100 2650 1100 2850
-Wire Wire Line
-	1450 2650 1450 3200
-Wire Wire Line
-	1450 3200 1000 3200
-Connection ~ 1450 2750
-Wire Wire Line
-	1450 2750 2200 2750
-Wire Wire Line
-	2200 2750 2200 2600
-Wire Wire Line
-	2200 2600 2400 2600
-Wire Wire Line
 	8050 2350 8700 2350
 Wire Wire Line
 	9300 2450 9200 2450
@@ -938,34 +851,10 @@ Wire Wire Line
 	8050 1200 7650 1200
 Wire Wire Line
 	7650 1200 7650 1300
-$Comp
-L Jumper_NO_Small JP2
-U 1 1 56BC717F
-P 7850 1300
-F 0 "JP2" H 7850 1450 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 7860 1240 50  0001 C CNN
-F 2 "wifi_pants:GS2" H 7850 1300 50  0001 C CNN
-F 3 "" H 7850 1300 50  0000 C CNN
-	1    7850 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NO_Small JP1
-U 1 1 56BC71CA
-P 7850 1000
-F 0 "JP1" H 7850 1150 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 7860 940 50  0001 C CNN
-F 2 "wifi_pants:GS2" H 7850 1000 50  0001 C CNN
-F 3 "" H 7850 1000 50  0000 C CNN
-	1    7850 1000
-	1    0    0    -1  
-$EndComp
 Connection ~ 7650 1000
 Connection ~ 8050 1000
 Connection ~ 8050 1300
 Connection ~ 7650 1300
-Text Notes 6950 2000 0    59   ~ 0
-Cut when using the JST\nfor power and an FTDI\ntype cable to prevent\ncontentions with\nCTS (pin 2) and\nUSB VBUS (pin 3)
 Wire Notes Line
 	7750 1450 7850 1450
 Wire Notes Line
@@ -978,4 +867,86 @@ Wire Notes Line
 	7850 1450 7850 1200
 Wire Notes Line
 	7500 1450 7600 1450
+Wire Wire Line
+	1200 1600 2400 1600
+Wire Wire Line
+	2950 1150 2200 1150
+Wire Wire Line
+	2200 1150 2200 1600
+Connection ~ 2200 1600
+Wire Wire Line
+	4100 1900 5900 1900
+Wire Wire Line
+	2200 2600 2200 2500
+Wire Wire Line
+	2200 2500 2400 2500
+Wire Wire Line
+	2200 2900 2200 3300
+Wire Wire Line
+	2200 3300 3250 3300
+Wire Wire Line
+	3250 3200 3250 3400
+Connection ~ 3250 3300
+Wire Wire Line
+	4100 2000 4150 2000
+Wire Wire Line
+	4150 1900 4150 2400
+Connection ~ 4150 1900
+Wire Wire Line
+	4150 1700 4100 1700
+Wire Wire Line
+	4150 1150 4150 1700
+Wire Wire Line
+	4150 1600 4100 1600
+Connection ~ 4150 1600
+Wire Wire Line
+	4150 1150 3550 1150
+Wire Wire Line
+	4150 2400 4100 2400
+Connection ~ 4150 2000
+Wire Wire Line
+	1150 2450 2050 2450
+Wire Wire Line
+	2050 2450 2050 1900
+Wire Wire Line
+	2050 1900 2400 1900
+Connection ~ 1400 1600
+Wire Wire Line
+	1400 1750 1400 1600
+Wire Wire Line
+	1400 2050 1400 2100
+Wire Wire Line
+	1800 2450 1800 2150
+Connection ~ 1800 2450
+Wire Wire Line
+	1800 1850 1800 1600
+Connection ~ 1800 1600
+Wire Wire Line
+	5000 2200 5000 2650
+Wire Wire Line
+	5000 2650 5600 2650
+Wire Wire Line
+	5600 2650 5600 2200
+Wire Wire Line
+	5300 2200 5300 2650
+Connection ~ 5300 2650
+Wire Wire Line
+	5900 1900 5900 1800
+Connection ~ 5600 1900
+Connection ~ 5000 1900
+Connection ~ 5300 1900
+$Comp
+L PWR_FLAG #FLG018
+U 1 1 56BEAB16
+P 5750 1850
+F 0 "#FLG018" H 5750 1945 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 2030 50  0000 C CNN
+F 2 "" H 5750 1850 50  0000 C CNN
+F 3 "" H 5750 1850 50  0000 C CNN
+	1    5750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1850 5750 1900
+Connection ~ 5750 1900
 $EndSCHEMATC
