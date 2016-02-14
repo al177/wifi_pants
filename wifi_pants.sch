@@ -36,8 +36,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "ESP8266 WiFi Module for Raspberry Pi"
-Date "2016-02-10"
-Rev "v3b0"
+Date "2016-02-14"
+Rev "v3"
 Comp "Andrew Litt"
 Comment1 "https://github.com/al177/wifi_pants"
 Comment2 "Licensed under Creative Commons Attribution Share-Alike"
@@ -321,11 +321,11 @@ F 3 "" H 3900 5450 50  0001 C CNN
 $EndComp
 NoConn ~ 8700 3750
 Text GLabel 7500 1000 0    39   Output ~ 0
-/PSU_SHDN
+/SHDN
 Text Notes 9100 1200 0    39   ~ 0
 /PSU_SHDN
 Text GLabel 1150 2450 0    39   Input ~ 0
-/PSU_SHDN
+/SHDN
 Text GLabel 7500 1300 0    39   Output ~ 0
 PWR_IN
 $Comp
@@ -384,10 +384,10 @@ F 3 "" H 5600 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L C C2
 U 1 1 56BBBDB1
 P 5000 2050
-F 0 "C4" H 5025 2150 50  0000 L CNN
+F 0 "C2" H 5025 2150 50  0000 L CNN
 F 1 "10uF X5R" V 5150 1600 50  0000 L CNN
 F 2 "mcous:0805(2012m)-CHIP-CAP" H 5038 1900 50  0001 C CNN
 F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5000 2050 50  0001 C CNN
@@ -592,10 +592,10 @@ F 9 "http://www.mouser.com/ProductDetail/Texas-Instruments/TPS61232DRCR/?qs=sGAE
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L C C3
 U 1 1 56BE3AE2
 P 5300 2050
-F 0 "C5" H 5325 2150 50  0000 L CNN
+F 0 "C3" H 5325 2150 50  0000 L CNN
 F 1 "10uF X5R" V 5450 1600 50  0000 L CNN
 F 2 "mcous:0805(2012m)-CHIP-CAP" H 5338 1900 50  0001 C CNN
 F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5300 2050 50  0001 C CNN
@@ -609,10 +609,10 @@ F 9 "NA" H 5300 2050 60  0001 C CNN "2nd Distrib Link"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L C C4
 U 1 1 56BE3B54
 P 5600 2050
-F 0 "C6" H 5625 2150 50  0000 L CNN
+F 0 "C4" H 5625 2150 50  0000 L CNN
 F 1 "10uF X5R" V 5750 1600 50  0000 L CNN
 F 2 "mcous:0805(2012m)-CHIP-CAP" H 5638 1900 50  0001 C CNN
 F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 5600 2050 50  0001 C CNN
@@ -626,10 +626,10 @@ F 9 "NA" H 5600 2050 60  0001 C CNN "2nd Distrib Link"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L C C6
 U 1 1 56BE4135
 P 1400 1900
-F 0 "C3" H 1425 2000 50  0000 L CNN
+F 0 "C6" H 1425 2000 50  0000 L CNN
 F 1 "22uF X5R" V 1250 1700 50  0000 L CNN
 F 2 "mcous:0805(2012m)-CHIP-CAP" H 1438 1750 50  0001 C CNN
 F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 1400 1900 50  0001 C CNN
@@ -643,10 +643,10 @@ F 9 "NA" H 1400 1900 60  0001 C CNN "2nd Distrib Link"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L C C5
 U 1 1 56BE46FB
 P 2200 2750
-F 0 "C2" H 2225 2850 50  0000 L CNN
+F 0 "C5" H 2225 2850 50  0000 L CNN
 F 1 "0.15uF X5R" V 2400 2450 50  0000 L CNN
 F 2 "mcous:0603(1608m)-CHIP-CAP" H 2238 2600 50  0001 C CNN
 F 3 "" H 2200 2750 50  0001 C CNN
