@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/dl/wifi_pants/wifi_pants.sch)
-    (date "2/14/2016 12:32:28 AM")
+    (date "2/18/2016 10:09:04 AM")
     (tool "Eeschema 4.0.0-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -173,7 +173,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 56BC71CA))
     (comp (ref R7)
-      (value 47K)
+      (value 22K)
       (footprint "mcous:0603(1608m)-CHIP-RESISTOR")
       (fields
         (field (name "MFG Name") "Panasonic Electronic Components")
@@ -256,9 +256,9 @@
       (footprint "mcous:0603(1608m)-CHIP-CAP")
       (fields
         (field (name "MFG Name") Murata)
-        (field (name "MFG Part Num") GRM155R61A154KE19D)
-        (field (name "Digikey PN") 490-5889-1-ND)
-        (field (name "Digikey Link") http://www.digikey.com/product-detail/en/GRM155R61A154KE19D/490-5889-1-ND/3315236)
+        (field (name "MFG Part Num") GRM188R61A154KA01D)
+        (field (name "Digikey PN") 490-11495-1-ND)
+        (field (name "Digikey Link") https://www.digikey.com/product-detail/en/GRM188R61A154KA01D/490-11495-1-ND/5333335)
         (field (name "2nd Distrib PN") NA)
         (field (name "2nd Distrib Link") NA))
       (libsource (lib device) (part C))
@@ -450,12 +450,12 @@
   (libraries
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical ESP8266)
       (uri C:\dl\kicad-ESP8266-master\ESP8266.lib))
     (library (logical wifi_pants-cache)
-      (uri C:\dl\wifi_pants\wifi_pants-cache.lib))
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
+      (uri C:\dl\wifi_pants\wifi_pants-cache.lib)))
   (nets
     (net (code 1) (name SD_CLK)
       (node (ref R2) (pin 1))
