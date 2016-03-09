@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ESP8266
 LIBS:wifi_pants-cache
 EELAYER 25 0
 EELAYER END
@@ -36,8 +35,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "ESP8266 WiFi Module for Raspberry Pi"
-Date "2016-02-14"
-Rev "v3"
+Date "2016-03-09"
+Rev "r4"
 Comp "Andrew Litt"
 Comment1 "https://github.com/al177/wifi_pants"
 Comment2 "Licensed under Creative Commons Attribution Share-Alike"
@@ -324,7 +323,7 @@ Text GLabel 7500 1000 0    39   Output ~ 0
 /SHDN
 Text Notes 9100 1200 0    39   ~ 0
 /PSU_SHDN
-Text GLabel 1150 2450 0    39   Input ~ 0
+Text GLabel 800  2300 0    39   Input ~ 0
 /SHDN
 Text GLabel 7500 1300 0    39   Output ~ 0
 PWR_IN
@@ -359,7 +358,7 @@ NoConn ~ 9200 3850
 NoConn ~ 8700 3950
 Text Notes 9100 1300 0    39   ~ 0
 PWR_IN
-Text GLabel 1200 1600 0    39   Output ~ 0
+Text GLabel 850  1600 0    39   Output ~ 0
 PWR_IN
 $Comp
 L GND #PWR012
@@ -403,12 +402,12 @@ $EndComp
 $Comp
 L GND #PWR014
 U 1 1 56BC3486
-P 1400 2100
-F 0 "#PWR014" H 1400 1850 50  0001 C CNN
-F 1 "GND" H 1400 1950 50  0000 C CNN
-F 2 "" H 1400 2100 50  0000 C CNN
-F 3 "" H 1400 2100 50  0000 C CNN
-	1    1400 2100
+P 1000 2000
+F 0 "#PWR014" H 1000 1750 50  0001 C CNN
+F 1 "GND" H 1000 1850 50  0000 C CNN
+F 2 "" H 1000 2000 50  0000 C CNN
+F 3 "" H 1000 2000 50  0000 C CNN
+	1    1000 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -540,23 +539,23 @@ F 3 "" H 7850 1000 50  0000 C CNN
 	1    7850 1000
 	1    0    0    -1  
 $EndComp
-Text Notes 6950 2000 0    59   ~ 0
-Cut when using the JST\nfor power and an FTDI\ntype cable to prevent\ncontentions with\nCTS (pin 2) and\nUSB VBUS (pin 3)
+Text Notes 6350 900  0    59   ~ 0
+Cut if the cable\nis inadvertently\ntriggering\n/PSU_SHDN
 $Comp
 L R R7
 U 1 1 56BB8C7C
-P 1800 2000
-F 0 "R7" V 1850 2200 50  0000 C CNN
-F 1 "22K" V 1800 2000 50  0000 C CNN
-F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 1730 2000 50  0001 C CNN
-F 3 "" H 1800 2000 50  0000 C CNN
-F 4 "Panasonic Electronic Components" H 1800 2000 60  0001 C CNN "MFG Name"
-F 5 "ERJ-3GEYJ223V" H 1800 2000 60  0001 C CNN "MFG Part Num"
-F 6 "P22KGCT-ND" H 1800 2000 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/ERJ-3GEYJ223V/P22KGCT-ND/134757" H 1800 2000 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 1800 2000 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 1800 2000 60  0001 C CNN "2nd Distrib Link"
-	1    1800 2000
+P 1500 1900
+F 0 "R7" V 1550 2100 50  0000 C CNN
+F 1 "47K 1%" V 1350 1900 50  0000 C CNN
+F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 1430 1900 50  0001 C CNN
+F 3 "" H 1500 1900 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 1500 1900 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF4702V" H 1500 1900 60  0001 C CNN "MFG Part Num"
+F 6 "P47.0KHCT-ND" H 1500 1900 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-search/en?keywords=P47.0KHCT-ND" H 1500 1900 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 1500 1900 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 1500 1900 60  0001 C CNN "2nd Distrib Link"
+	1    1500 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -628,18 +627,18 @@ $EndComp
 $Comp
 L C C6
 U 1 1 56BE4135
-P 1400 1900
-F 0 "C6" H 1425 2000 50  0000 L CNN
-F 1 "22uF X5R" V 1250 1700 50  0000 L CNN
-F 2 "mcous:0805(2012m)-CHIP-CAP" H 1438 1750 50  0001 C CNN
-F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 1400 1900 50  0001 C CNN
-F 4 "Taiyo Yuden" H 1400 1900 60  0001 C CNN "MFG Name"
-F 5 "LMK212BJ226MG-T" H 1400 1900 60  0001 C CNN "MFG Part Num"
-F 6 "587-1958-1-ND" H 1400 1900 60  0001 C CNN "Digikey PN"
-F 7 "http://www.digikey.com/product-detail/en/LMK212BJ226MG-T/587-1958-1-ND/1646621" H 1400 1900 60  0001 C CNN "Digikey Link"
-F 8 "NA" H 1400 1900 60  0001 C CNN "2nd Distrib PN"
-F 9 "NA" H 1400 1900 60  0001 C CNN "2nd Distrib Link"
-	1    1400 1900
+P 1000 1850
+F 0 "C6" H 1025 1950 50  0000 L CNN
+F 1 "22uF X5R" V 850 1650 50  0000 L CNN
+F 2 "mcous:0805(2012m)-CHIP-CAP" H 1038 1700 50  0001 C CNN
+F 3 "http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=LMK316BJ106KL-T&fileName=LMK316BJ106KL-T_SS&mode=specSheetDownload" H 1000 1850 50  0001 C CNN
+F 4 "Taiyo Yuden" H 1000 1850 60  0001 C CNN "MFG Name"
+F 5 "LMK212BJ226MG-T" H 1000 1850 60  0001 C CNN "MFG Part Num"
+F 6 "587-1958-1-ND" H 1000 1850 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/LMK212BJ226MG-T/587-1958-1-ND/1646621" H 1000 1850 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 1000 1850 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 1000 1850 60  0001 C CNN "2nd Distrib Link"
+	1    1000 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -659,7 +658,6 @@ F 9 "NA" H 2200 2750 60  0001 C CNN "2nd Distrib Link"
 	1    2200 2750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2400 2200
 NoConn ~ 4100 2800
 $Comp
 L +5V #PWR017
@@ -795,8 +793,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 900  8550 950 
 Wire Wire Line
-	7950 1300 8750 1300
-Wire Wire Line
 	8650 1400 8750 1400
 Wire Wire Line
 	8650 1500 8750 1500
@@ -821,37 +817,17 @@ Wire Wire Line
 Wire Wire Line
 	8300 1200 8750 1200
 Wire Wire Line
-	7500 1300 7750 1300
-Wire Wire Line
 	7650 1000 7650 900 
 Wire Wire Line
 	7650 900  8050 900 
 Wire Wire Line
 	8050 900  8050 1000
-Wire Wire Line
-	8050 1300 8050 1200
-Wire Wire Line
-	8050 1200 7650 1200
-Wire Wire Line
-	7650 1200 7650 1300
 Connection ~ 7650 1000
 Connection ~ 8050 1000
-Connection ~ 8050 1300
-Connection ~ 7650 1300
 Wire Notes Line
-	7750 1450 7850 1450
-Wire Notes Line
-	7600 1450 7600 950 
-Wire Notes Line
-	7600 950  7850 950 
-Wire Notes Line
-	7850 950  7850 900 
-Wire Notes Line
-	7850 1450 7850 1200
-Wire Notes Line
-	7500 1450 7600 1450
+	7850 1450 7750 1450
 Wire Wire Line
-	1200 1600 2400 1600
+	850  1600 2400 1600
 Wire Wire Line
 	2950 1150 2200 1150
 Wire Wire Line
@@ -887,23 +863,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 2400 4100 2400
 Connection ~ 4150 2000
-Wire Wire Line
-	1150 2450 2050 2450
-Wire Wire Line
-	2050 2450 2050 1900
-Wire Wire Line
-	2050 1900 2400 1900
-Connection ~ 1400 1600
-Wire Wire Line
-	1400 1750 1400 1600
-Wire Wire Line
-	1400 2050 1400 2100
-Wire Wire Line
-	1800 2450 1800 2150
-Connection ~ 1800 2450
-Wire Wire Line
-	1800 1850 1800 1600
-Connection ~ 1800 1600
 Wire Wire Line
 	5000 2200 5000 2650
 Wire Wire Line
@@ -949,4 +908,97 @@ F 9 "NA" H 2750 6100 60  0001 C CNN "2nd Distrib Link"
 	1    2750 6100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1000 1700 1000 1600
+Connection ~ 1000 1600
+$Comp
+L R R8
+U 1 1 56D0992F
+P 1500 2600
+F 0 "R8" V 1550 2800 50  0000 C CNN
+F 1 "33K 1%" V 1350 2600 50  0000 C CNN
+F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 1430 2600 50  0001 C CNN
+F 3 "" H 1500 2600 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 1500 2600 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF3302V" H 1500 2600 60  0001 C CNN "MFG Part Num"
+F 6 "P33.0KHCT-ND" H 1500 2600 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-search/en?keywords=P33.0KHCT-ND" H 1500 2600 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 1500 2600 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 1500 2600 60  0001 C CNN "2nd Distrib Link"
+	1    1500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 56D099AE
+P 1500 3050
+F 0 "R9" V 1550 3250 50  0000 C CNN
+F 1 "1K 1%" V 1350 3050 50  0000 C CNN
+F 2 "mcous:0603(1608m)-CHIP-RESISTOR" V 1430 3050 50  0001 C CNN
+F 3 "" H 1500 3050 50  0000 C CNN
+F 4 "Panasonic Electronic Components" H 1500 3050 60  0001 C CNN "MFG Name"
+F 5 "ERJ-3EKF1001V" H 1500 3050 60  0001 C CNN "MFG Part Num"
+F 6 "P1.00KHCT-ND" H 1500 3050 60  0001 C CNN "Digikey PN"
+F 7 "http://www.digikey.com/product-detail/en/ERJ-3EKF1001V/P1.00KHCT-ND/198071" H 1500 3050 60  0001 C CNN "Digikey Link"
+F 8 "NA" H 1500 3050 60  0001 C CNN "2nd Distrib PN"
+F 9 "NA" H 1500 3050 60  0001 C CNN "2nd Distrib Link"
+	1    1500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 56D09A18
+P 1500 3300
+F 0 "#PWR019" H 1500 3050 50  0001 C CNN
+F 1 "GND" H 1500 3150 50  0000 C CNN
+F 2 "" H 1500 3300 50  0000 C CNN
+F 3 "" H 1500 3300 50  0000 C CNN
+	1    1500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2200 2000 2200
+Wire Wire Line
+	2000 2200 2000 2800
+Wire Wire Line
+	2000 2800 1500 2800
+Wire Wire Line
+	1500 2750 1500 2900
+Connection ~ 1500 2800
+Wire Wire Line
+	1500 3200 1500 3300
+Connection ~ 1500 1600
+Wire Wire Line
+	2400 1900 1700 1900
+Wire Wire Line
+	1700 1900 1700 2300
+Wire Wire Line
+	1700 2300 800  2300
+Connection ~ 1500 2300
+Wire Wire Line
+	1500 1750 1500 1600
+Wire Wire Line
+	1500 2050 1500 2450
+Wire Notes Line
+	1400 1550 1600 1550
+Wire Notes Line
+	1600 1550 1600 3250
+Wire Notes Line
+	1600 3250 1400 3250
+Wire Notes Line
+	1400 3250 1400 1550
+Text Notes 1250 2950 2    59   ~ 0
+Undervoltage\nlock out\noff at 2.72V\non at 2.88V
+Wire Wire Line
+	7950 1300 8750 1300
+Wire Wire Line
+	7500 1300 7750 1300
+Wire Notes Line
+	7100 750  7850 750 
+Wire Notes Line
+	7850 750  7850 950 
+Text Notes 6700 1900 0    60   ~ 0
+Solder if PWR_IN is\nneeded from the header.\nLeft off by default to\nprevent accidental battery\nshorting
+Wire Notes Line
+	7850 1300 7850 1450
 $EndSCHEMATC
